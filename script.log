@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  23 JUL 2023 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.10)  9 AUG 2023 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -712,9 +712,12 @@ Package shellesc Info: Restricted shell escape enabled on input line 77.
 Package: transparent 2022-10-27 v1.5 Transparency with color stacks
  (/usr/local/texlive/2023/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color stack (HO)
-))
-Package hyperref Info: Option `colorlinks' set `true' on input line 156.
-\c@proposition=\count330
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/marginnote/marginnote.sty
+Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
+\c@mn@abspage=\count330
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 158.
+\c@proposition=\count331
  (/usr/local/texlive/2023/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.tex
 File: tikzlibrarytikzmark.code.tex 2022/08/24 v1.15 TikZ library for marking positions in a document
  (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -760,11 +763,11 @@ File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@newproposition=\count331
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 221.
+\c@newproposition=\count332
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 167.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux
+) (./script.aux (./Grundlagen/main.aux) (./Grundlagen/Aufgaben.aux) (./Turingmachine/main.aux) (./Turingmachine/Aufgaben.aux) (./Berechenbarkeit/main.aux
 
 LaTeX Warning: Label `fig:Standardaufz√§hlung' multiply defined.
 
@@ -778,36 +781,36 @@ LaTeX Warning: Label `fig:' multiply defined.
 ) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux) (./Platzkomplexit√§t/main.aux))
 \openout1 = `script.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 221.
-LaTeX Font Info:    ... okay on input line 221.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
+LaTeX Font Info:    ... okay on input line 167.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
+\scratchcounter=\count333
 \scratchdimen=\dimen311
 \scratchbox=\box98
-\nofMPsegments=\count333
-\nofMParguments=\count334
+\nofMPsegments=\count334
+\nofMParguments=\count335
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count335
+\MPscratchCnt=\count336
 \MPscratchDim=\dimen312
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
+\MPnumerator=\count337
+\makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -853,77 +856,86 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 221.
+Package hyperref Info: Link coloring ON on input line 167.
 (./script.out) (./script.out)
 \@outlinefile=\write4
 \openout4 = `script.out'.
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 240.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-<qrcode.png, id=806, 263.48438pt x 263.48438pt>
-File: qrcode.png Graphic file (type png)
-<use qrcode.png>
-Package pdftex.def Info: qrcode.png  used on input line 244.
-(pdftex.def)             Requested size: 94.4048pt x 94.404pt.
- [1
-
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./qrcode.png>] (./script.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 168.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 168.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 3.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 168.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 3.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 168.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 3.
+(Font)              <10> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 3.
+(Font)              <7.4> on input line 168.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 3.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3.
+(Font)              <6> on input line 168.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 168.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
+ [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}
+
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 236.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<qrcode.png, id=798, 263.48438pt x 263.48438pt>
+File: qrcode.png Graphic file (type png)
+<use qrcode.png>
+Package pdftex.def Info: qrcode.png  used on input line 240.
+(pdftex.def)             Requested size: 94.4048pt x 94.404pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 ...amma \to \Sigma \))*}{20}{subsection.3.15}
-                                                  % [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] [3])
+l.248 \end{titlepage}
+                      [1 <./qrcode.png>]
+Package marginnote Info: Using workaround for absolute page number on input line 248.
+ (./script.toc
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.61 ...\))\(\diamondsuit \)}{24}{subsection.3.15}
+                                                  % [1]
+Package marginnote Info: Using workaround for absolute page number on input line 61.
+ [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [3])
 \tf@toc=\write5
 \openout5 = `script.toc'.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 257.
+(Font)              <8> on input line 253.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 257.
+(Font)              <5> on input line 253.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
  [4]
 \openout2 = `Grundlagen/main.aux'.
 
  (./Grundlagen/main.tex
-<Grundlagen/svg_files/Einf√ºhrung.png, id=1250, 746.79pt x 400.49625pt>
+<Grundlagen/svg_files/Einf√ºhrung.png, id=1227, 746.79pt x 400.49625pt>
 File: Grundlagen/svg_files/Einf√ºhrung.png Graphic file (type png)
 <use Grundlagen/svg_files/Einf√ºhrung.png>
 Package pdftex.def Info: Grundlagen/svg_files/Einf√ºhrung.png  used on input line 3.
@@ -933,10 +945,56 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 10
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [5
 
-{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./Grundlagen/svg_files/Einf√ºhrung.png>] [6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]) [7]
+{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc} <./Grundlagen/svg_files/Einf√ºhrung.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 44.
+
+[6{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 88.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 88.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 100.
+
+) [7]
+\openout2 = `Grundlagen/Aufgaben.aux'.
+
+ (./Grundlagen/Aufgaben.tex [8
+
+
+
+] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
+
+ []
+
+) [10]
 \openout2 = `Turingmachine/main.aux'.
 
- (./Turingmachine/main.tex [8
+ (./Turingmachine/main.tex [11
 
 
 
@@ -946,14 +1004,59 @@ Overfull \hbox (3.2926pt too wide) in paragraph at lines 45--46
 \OT1/lmr/m/n/10 (\OML/lmm/m/it/10 q[]; a[]; []  ; a[]; q[]; a[]; []  ; a[]; B[]; []  ; B[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 heiˇt $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 q; a[]; []  ; a[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 der \T1/lmr/bx/n/10 Be-din-gungs-teil \T1/lmr/m/n/10 und $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 q[]; a[]; []  ; a[]; B[]; []  ; B[]\OT1/lmr/m/n/10 )$
  []
 
-[9
+[12
 
 ]
 Overfull \hbox (40.5955pt too wide) in paragraph at lines 59--60
 \T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 Q; \OT1/lmr/m/n/10 ^^F\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^@\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; s; F\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 ei-ne k-DTM. F¸r Kon-fi-gu-ra-ti-on $\OML/lmm/m/it/10 C \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$ \T1/lmr/m/n/10 und $\OML/lmm/m/it/10 C[] \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 q[]; w[]; []  ; w[]; p[]; []  ; p[]$
  []
 
-[10]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 87.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 87.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 87.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 87.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 87.
+
+[13]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 112.
+
+
 Overfull \hbox (20.09167pt too wide) in paragraph at lines 121--122
 []\T1/lmr/m/n/10 Ist die rech-nung von M zur Ein-ga-be $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 die end-li-che Rech-nung $\OML/lmm/m/it/10 C[]; []  ; C[]$\T1/lmr/m/n/10 , so gilt $\OT1/lmr/m/n/10 ^^H[](\OML/lmm/m/it/10 w[]; []  ; w[]\OT1/lmr/m/n/10 ) =
  []
@@ -968,43 +1071,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[11]
+[14]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 136.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [12]
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 140.
+
+[15]
 
 LaTeX Warning: Command \" invalid in math mode on input line 192.
 
-[13]
-<Turingmachine/alphabet_wech.png, id=1308, 503.8825pt x 259.97125pt>
+[16]
+<Turingmachine/alphabet_wech.png, id=1304, 503.8825pt x 259.97125pt>
 File: Turingmachine/alphabet_wech.png Graphic file (type png)
 <use Turingmachine/alphabet_wech.png>
 Package pdftex.def Info: Turingmachine/alphabet_wech.png  used on input line 261.
 (pdftex.def)             Requested size: 236.01561pt x 121.76997pt.
-) [14 <./Turingmachine/alphabet_wech.png>]
-\openout2 = `Berechenbarkeit/main.aux'.
-
- (./Berechenbarkeit/main.tex [15
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 263.
 
 
-] [16
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 263.
+
+) [17 <./Turingmachine/alphabet_wech.png>]
+\openout2 = `Turingmachine/Aufgaben.aux'.
+
+ (./Turingmachine/Aufgaben.tex) [18
+
+
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 56.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 56.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+\openout2 = `Berechenbarkeit/main.aux'.
+
+ (./Berechenbarkeit/main.tex [19
+
+
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 32.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 32.
+
+[20
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 41.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 41.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1026,7 +1158,41 @@ Overfull \hbox (15.424pt too wide) in paragraph at lines 67--68
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 76.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [17] [18] [19]
+)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 100.
+
+[21]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 138.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 145.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 145.
+
+[22] [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 259.
@@ -1045,6 +1211,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 259.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 259.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 265.
 
 
@@ -1060,12 +1234,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\Sigma' on input line 265.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 272.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 265.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 277.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 265.
 
-[20]
+<Berechenbarkeit/Tetris.png, id=1351, 867.24pt x 364.36125pt>
+File: Berechenbarkeit/Tetris.png Graphic file (type png)
+<use Berechenbarkeit/Tetris.png>
+Package pdftex.def Info: Berechenbarkeit/Tetris.png  used on input line 272.
+(pdftex.def)             Requested size: 346.88986pt x 145.74191pt.
+[24 <./Berechenbarkeit/Tetris.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 298.
@@ -1087,6 +1268,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\Box' on input line 298.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 298.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 298.
+
+
 Overfull \hbox (8.49171pt too wide) in paragraph at lines 305--307
 \T1/lmr/m/n/10 Im we-sent-li-chen wol-len wir er-rei-chen, dass es ge-nau dann f¸r ein Wort w ei-ne par-ti-el-le lˆ-sung $\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 u[]; v[]\OT1/lmr/m/n/10 )\OML/lmm/m/it/10 ; []  ; \OT1/lmr/m/n/10 (\OML/lmm/m/it/10 u[]; v[]\OT1/lmr/m/n/10 )$
  []
@@ -1096,58 +1285,148 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
-[21]
+[25]
+<Berechenbarkeit/beispiel.png, id=1364, 908.39375pt x 719.68875pt>
+File: Berechenbarkeit/beispiel.png Graphic file (type png)
+<use Berechenbarkeit/beispiel.png>
+Package pdftex.def Info: Berechenbarkeit/beispiel.png  used on input line 332.
+(pdftex.def)             Requested size: 545.04047pt x 431.81659pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 331.
+Overfull \hbox (73.00923pt too wide) in paragraph at lines 332--333
+ [] 
+ []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 331.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 331.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\in' on input line 331.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 331.
-
-
-Overfull \hbox (19.16823pt too wide) in paragraph at lines 365--366
+[26 <./Berechenbarkeit/beispiel.png>]
+Overfull \hbox (19.16823pt too wide) in paragraph at lines 366--367
 []$\OMS/lmsy/m/n/10 8\OML/lmm/m/it/10 e; x \OMS/lmsy/m/n/10 2 \U/msb/m/n/10 N[]$ \T1/lmr/m/n/10 mit $\OT1/lmr/m/n/10 ^^H[](\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/10 "$ \T1/lmr/m/n/10 sei $\OT1/lmr/m/n/10 ^^H[] : \U/msb/m/n/10 N[] \U/msa/m/n/10   \U/msb/m/n/10 N[]$ \T1/lmr/m/n/10 die aprti-ell be-re-chena-b-re par-ti-el-le Funk-ti-on mit $\OML/lmm/m/it/10 dom\OT1/lmr/m/n/10 (^^H[]) =
  []
 
-[22]) [23]
+[27]
+
+LaTeX Warning: Hyper reference `subsubsec:3.20.2' on page 28 undefined on input line 393.
+
+
+LaTeX Warning: Hyper reference `subsubsec:3.20.1' on page 28 undefined on input line 402.
+
+) [28]
 \openout2 = `Automaten/main.aux'.
 
- (./Automaten/main.tex [24
+ (./Automaten/main.tex [29
 
 
 
 
-] [25
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 43.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 43.
+
+[30
 
 ]
 Overfull \hbox (18.9114pt too wide) in paragraph at lines 52--53
 \T1/lmr/m/n/10 und $\OML/lmm/m/it/10 a \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 ^^F$ \T1/lmr/m/n/10 wird auch \T1/lmr/bx/n/10 ‹ber-gangs-funk-ti-on \T1/lmr/m/n/10 von A gen-nant. Ana-lo-ges gilt f¸r $\OML/lmm/m/it/10 ^^N[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 Q[]; w\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 statt $[]\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 ^^N[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 q; w\OT1/lmr/m/n/10 )\OMS/lmsy/m/n/10 g$\T1/lmr/m/n/10 . 
  []
 
-[26] [27]) [28]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 54.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 57.
+
+[31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 73.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 73.
+
+[32]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 129.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 129.
+
+) [33]
 \openout2 = `Regul√§reSprachen/main.aux'.
 
- (./Regul√§reSprachen/main.tex [29
+ (./Regul√§reSprachen/main.tex [34
 
 
 
 
-] [30
+]
 
-] [31]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 29.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 40.
+
+[35
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 58.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 58.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 75.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 75.
+
+[36]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 93.
+
 
 LaTeX Warning: Command \" invalid in math mode on input line 103.
 
@@ -1156,35 +1435,186 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
-[32] [33] [34]) [35]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 121.
+
+[37]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 134.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 134.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 152.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 152.
+
+[38] [39]) [40]
 \openout2 = `Grammatiken/main.aux'.
 
  (./Grammatiken/main.tex (/usr/local/texlive/2023/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) [36
+) [41
 
 
 
 
-] [37
+]
 
-] [38] [39]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 33.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 33.
+
+[42
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 43.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 43.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 53.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 53.
+
+[43] [44]
 Overfull \hbox (1.74472pt too wide) in paragraph at lines 142--142
  [][] 
  []
 
-[40] [41] [42] [43]
+[45]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 185.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 185.
+
+[46]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 219.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 219.
+
+[47] [48]
 
 LaTeX Warning: Command \" invalid in math mode on input line 338.
 
-[44] [45] [46] [47]
 
-LaTeX Warning: Command \" invalid in math mode on input line 511.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 344.
 
-[48]) [49]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 344.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 352.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 352.
+
+[49] [50]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 489.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 489.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 506.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 506.
+
+[51]
+
+LaTeX Warning: Command \" invalid in math mode on input line 513.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 538.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 538.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 541.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 541.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 549.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 552.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 552.
+
+[52]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 558.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 558.
+
+) [53]
 \openout2 = `Zeitkomplexit√§t/main.aux'.
 
- (./Zeitkomplexit√§t/main.tex [50
+ (./Zeitkomplexit√§t/main.tex [54
 
 
 
@@ -1194,21 +1624,111 @@ Overfull \hbox (2.60947pt too wide) in paragraph at lines 15--19
 \T1/lmr/m/n/10 Zeich-nung t-zeitbeschr‰nkt an Stel-le von f-zeitbeschr‰nkt. Man spricht al-so zum Bei-spiel von $\OML/lmm/m/it/10 n[]$\T1/lmr/m/n/10 -zeitbeschr‰nkt
  []
 
-[51
+[55
 
-] [52]
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 64.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 76.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 82.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 82.
+
+[56]
 Overfull \hbox (59.66278pt too wide) in paragraph at lines 88--90
 \T1/lmr/m/n/10 F¸r je-des Wort $\OML/lmm/m/it/10 L[] \OT1/lmr/m/n/10 := \OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 w[]\OT1/lmr/m/n/10 0[]\OMS/lmsy/m/n/10 g ^^R \OML/lmm/m/it/10 L$ \T1/lmr/m/n/10 be-trach-ten wir die k¸r-zes-te Crossing-Sequenz $\OML/lmm/m/it/10 C[] \OMS/lmsy/m/n/10 2 f\OML/lmm/m/it/10 C[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 R\OT1/lmr/m/n/10 )\OML/lmm/m/it/10 ; []  ; C[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 R\OT1/lmr/m/n/10 )\OMS/lmsy/m/n/10 g$
  []
 
-[53]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 109.
+
+[57]
 
 LaTeX Warning: Command \" invalid in math mode on input line 124.
 
-[54] [55] [56]
+[58] [59]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 175.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 186.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 186.
+
+[60]
 Overfull \hbox (74.29489pt too wide) in paragraph at lines 195--196
 []\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M[]; M[]; []$ \T1/lmr/m/n/10 ei-ne ge-eig-ne-te ef-fek-ti-ve Auf-z‰h-lung de-ter-mi-nis-ti-sche TM der Form $\OT1/lmr/m/n/10 (\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; []  ; n\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\U/msa/m/n/10 ^^C\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 ,
  []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 198.
 
 
 Overfull \hbox (26.95222pt too wide) in paragraph at lines 206--208
@@ -1220,14 +1740,22 @@ Overfull \hbox (5.78096pt too wide) in paragraph at lines 208--213
 []\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M[]; M[]; []$ \T1/lmr/m/n/10 ei-ne ge-eig-ne-te Auf-z‰h-lung von TM der Form $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; []  ; m\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\U/msa/m/n/10 ^^C\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 ,
  []
 
-[57]
+[61]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 244.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 244.
+
 
 LaTeX Warning: Command \" invalid in math mode on input line 247.
 
-) [58]
+) [62]
 \openout2 = `"Komplexit√§tsklassen P und NP/main.aux"'.
 
- (./Komplexit√§tsklassen P und NP/main.tex [59
+ (./Komplexit√§tsklassen P und NP/main.tex [63
 
 
 
@@ -1237,14 +1765,22 @@ Overfull \hbox (6.95421pt too wide) in paragraph at lines 15--16
 \T1/lmr/m/n/10 Eine Spra-che A ¸ber {0, 1} ist in \T1/lmr/bx/n/10 po-ly-no-mi-el-ler Zeit manny-to-one- re-du-zier-bar\T1/lmr/m/n/10 , auch \T1/lmr/bx/n/10 p-m-reduzierbar\T1/lmr/m/n/10 ,
  []
 
-[60
 
-] [61]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 39.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 39.
+
+[64
+
+] [65]
 Overfull \hbox (11.95377pt too wide) in paragraph at lines 93--97
 []\T1/lmr/m/n/10 Nach [][]Be-mer-kung 8.11[][] gilt SAT $\OMS/lmsy/m/n/10 2$ \T1/lmr/bx/n/10 NP\T1/lmr/m/n/10 . Es ge-n¸gt al-so zu zei-gen, dass es $\OMS/lmsy/m/n/10 8\OML/lmm/m/it/10 p \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 poly$ \T1/lmr/m/n/10 und p-zeitbeschr‰nkten
  []
 
-[62] [63]
+[66] [67]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 206.
@@ -1253,19 +1789,75 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\leq' on input line 206.
 
-[64]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 236.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 236.
+
+[68]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 255.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 255.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 263.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leq' on input line 263.
+(hyperref)                removing `\diamondsuit' on input line 263.
 
-[65]) [66]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 277.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 277.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 280.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 280.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 293.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 293.
+
+[69]) [70]
 \openout2 = `Platzkomplexit√§t/main.aux'.
 
- (./Platzkomplexit√§t/main.tex [67
+ (./Platzkomplexit√§t/main.tex [71
 
 
 
@@ -1275,7 +1867,7 @@ Overfull \hbox (29.37924pt too wide) in paragraph at lines 5--7
 \T1/lmr/m/n/10 Eine \T1/lmr/bx/n/10 TM vom Offline-Typ \T1/lmr/m/n/10 ist ei-ne k-TM $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OML/lmm/m/it/10 Q; \OT1/lmr/m/n/10 ^^F\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^@\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; s; F\OT1/lmr/m/n/10 )$ \T1/lmr/m/n/10 mit $\OML/lmm/m/it/10 k \OMS/lmsy/m/n/10 ^^U \OT1/lmr/m/n/10 3$ \T1/lmr/m/n/10 und wie folgt an-ge-pas-s-ter/eingeschr‰nkter
  []
 
-[68
+[72
 
 ]
 
@@ -1294,6 +1886,14 @@ LaTeX Warning: Command \" invalid in math mode on input line 55.
 LaTeX Warning: Command \" invalid in math mode on input line 56.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 63.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\diamondsuit' on input line 63.
+
+
 Overfull \hbox (25.90398pt too wide) in paragraph at lines 71--72
 \T1/lmr/m/n/10 Sei s ei-ne Platz-schran-ke und S ei-ne platz-kon-stru-ier-ba-re Platz-schran-ke mit $\OML/lmm/m/it/10 s\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ) = \OML/lmm/m/it/10 o\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 S\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 n\OT1/lmr/m/n/10 ))$\T1/lmr/m/n/10 . Dann gilt \T1/lmr/bx/n/10 DSPACE\T1/lmr/m/n/10 (s(n))
  []
@@ -1304,14 +1904,14 @@ Overfull \hbox (6.6405pt too wide) in paragraph at lines 74--76
  []
 
 
-LaTeX Warning: Hyper reference `label' on page 69 undefined on input line 85.
+LaTeX Warning: Hyper reference `label' on page 73 undefined on input line 85.
 
 
 Overfull \hbox (47.47562pt too wide) in paragraph at lines 76--86
 []\T1/lmr/m/n/10 Sei $\OML/lmm/m/it/10 M[]; M[]; []$ \T1/lmr/m/n/10 ei-ne ge-eig-ne-te ef-fek-ti-ve Auf-z‰h-lung al-ler TM der Form $\OML/lmm/m/it/10 M \OT1/lmr/m/n/10 = (\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; []  ; m\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OML/lmm/m/it/10 ; \U/msa/m/n/10 ^^C\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 ^^A\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 1\OMS/lmsy/m/n/10 g\OT1/lmr/m/n/10 )$\T1/lmr/m/n/10 ,
  []
 
-[69]) [70] (./script.aux (./Grundlagen/main.aux) (./Turingmachine/main.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./Regul√§reSprachen/main.aux) (./Grammatiken/main.aux) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux) (./Platzkomplexit√§t/main.aux))
+[73]) [74] (./script.aux (./Grundlagen/main.aux) (./Grundlagen/Aufgaben.aux) (./Turingmachine/main.aux) (./Turingmachine/Aufgaben.aux) (./Berechenbarkeit/main.aux) (./Automaten/main.aux) (./Regul√§reSprachen/main.aux) (./Grammatiken/main.aux) (./Zeitkomplexit√§t/main.aux) (./Komplexit√§tsklassen P und NP/main.aux) (./Platzkomplexit√§t/main.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1319,21 +1919,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `script.out' has not changed.
-(rerunfilecheck)             Checksum: A5389D37E63D1549CBD09DA3987540A9;44038.
+(rerunfilecheck)             Checksum: 553A476D67DF146AD4894F95FEF31B07;48169.
  ) 
 Here is how much of TeX's memory you used:
- 32059 strings out of 476025
- 631661 string characters out of 5790017
+ 32195 strings out of 476025
+ 635542 string characters out of 5790017
  1876388 words of memory out of 5000000
- 51550 multiletter control sequences out of 15000+600000
+ 51663 multiletter control sequences out of 15000+600000
  604493 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,17n,117p,1907b,1464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,117p,1907b,1466s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/lukas/Library/texlive/2023/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk></usr/local/texlive/2023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on script.pdf (71 pages, 722290 bytes).
+Output written on script.pdf (76 pages, 812861 bytes).
 PDF statistics:
- 1851 PDF objects out of 2073 (max. 8388607)
- 1698 compressed objects within 17 object streams
- 311 named destinations out of 1000 (max. 500000)
- 1626 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1854 PDF objects out of 2073 (max. 8388607)
+ 1692 compressed objects within 17 object streams
+ 315 named destinations out of 1000 (max. 500000)
+ 1604 words of extra memory for PDF output out of 10000 (max. 10000000)
 

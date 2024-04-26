@@ -26,7 +26,7 @@
   u \sim_A v \Leftrightarrow \delta^*(s, u) = \delta^*(s,v) \quad \forall u, v \in \Sigma
 \]
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (DEA-Äquivalenzrelation)\(\diamondsuit\)} 
 Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
 \begin{itemize}
   \item [(i)] Die A-Äquivalenz ist eine Äquivalenzrelation.
@@ -37,7 +37,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
 \mysubsection{Definition (Rechtskongruenz)} 
   Sei \(\Sigma\) ein Alphabet Eine Rechtskongruenz auf \(\Sigma^{*}\) ist eine Äquivalenzrelation \(\sim \subseteq (\Sigma^{*})^{2}\) mit \(u \sim v \Rightarrow uw \sim vw \quad \forall u, v, w \in \Sigma^{*}\).
 
-\mysubsection{Proposition} 
+\mysubsection{Proposition (DEA-Äquivalenz: Rechtskongruenz)\(\diamondsuit\)} 
   Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA. Die A-Äquivalenz \(\sim_{A}\) ist eine Rechtskonqruenz auf \(\Sigma^{*}\).
   \begin{proof}
     Seien \(u, v, w \in \Sigma^{*}\) mit \(u \sim_{A} v\). Dann gilt 
@@ -48,20 +48,20 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
   \end{proof} 
   Dann gilt \(uw\sim_{A}vw\). Zu jedem DEA A gibt es also eine dazugehärige Rechtskonguenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index so dass L(A) die Vereinigung von Äquivalenzklasse von \(\sim_{A}\) ist. Tatsächlich gilt auch die Umkehrung: Ist L die Vereinigung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) mit endlichem Index, so gibt es einen DEA A mit L(A) = L
 
-\mysubsection{Definition(DEA-Konstruktion für Äquivalenzklassen)} 
+\mysubsection{Definition(EA aus Rechtskongruenz)} 
   Sei \(\Sigma\) eine Alphabet und L Vereinigung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index. Es bezeichne
   \[
     A_{\sim , L} := (\Sigma^{*}_{/\sim}, \Sigma, \Delta, [\lambda]_{\sim}, {[w]_{\sim} : w \in L})
   \]
   den DEA mit \(\delta_{det, A_{\sim}, L}([w]_{\sim}, a) = [wa]_{\sim} \forall w \in \Sigma^{*}\) und \(a \in \Sigma\). Die Wohldefiniertheit von \(\delta_{det, A_{\sim}, L}\) ergibt sich daraus, dass \(\sim\) eine Rechtskongruenz ist. Um uns davon zu überzeugen, dass \(L(A_{\sim, L}) = L\) gilt betrachten wir zunächst die Arbeitsweise von \(A_{\sim, L}\).
 
-\mysubsection{Lemma} 
+\mysubsection{Lemma (Erweiterte Übergangsfunktion, Basisfall, Äquivalenzrelation)\(\diamondsuit\)} 
   Sei \(\Sigma\) ein Alphabet, L Vereinigung von Äquivalenzklassem einer Rechtskongruenz \(\sim\) auf \(\Sigma^{*}\) mit endlichem Index und sei \(\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}\) die erweiterte Übergangsfunktion von \(A_{\sim, L}\). Dann gilt \(\delta^{*}([\lambda]_{\sim}, w) = [w]_{\sim} \forall w \in \Sigma^{*}\). 
   \begin{proof}
     Wir verwenden vollständige Induktion über |w|. Es gilt \(\delta^{*}([\lambda]_{\sim}, \lambda) = [\lambda_{\sim}]\). Sei nun w \(\in \Sigma^{+} \cdots\)  
   \end{proof}
 
-\mysubsection{Satz} 
+\mysubsection{Satz (DEA-Konstruktion: Äquivalenzklassen)\(\diamondsuit\)} 
   Sei L die vereinigung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) mit endlichem Index Es gibt \(L(A_{\sim, L}) = L\) 
   \begin{proof}
     Sei \(\Sigma\) das Alphabet, so dass \(\sim\) eine Rechtskongruenz auf \(\Sigma^{*}\) ist. Sei \(\delta^{*} : \Sigma^{*}_{/\sim} \times \Sigma^{*} \rightarrow \Sigma^{*}_{/\sim}\) die erweiterte Übergangsfunktion von \(A_{\sim, L}\) und sei w \(\in \Sigma^{*}\). Aus \hyperref[subsec:5.5]{Lemma 5.5} folgt. 
@@ -72,7 +72,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     \[\Leftrightarrow w \in L\]
   \end{proof}
 
-\mysubsection{Korollar} 
+\mysubsection{Korollar (Reguläre Sprachen und Äquivalenzklassen)\(\diamondsuit\)} 
   Eine Sprache L ist genau dann regulär, wenn sie die Verienigung von Äquivalenzklasse einer Rechtskongruenz mit endlichem Index ist. 
   \begin{proof}
     Folgt aus \hyperref[subsec:5.3]{Bemerkung 5.3}, \hyperref[subsec:5.5]{Proposition 5.5} und \hyperref[subsec:5.8]{Satz 5.8}
@@ -90,7 +90,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     \item [(iii)] \(f(F_1) = F_2\)
   \end{itemize}
 
-\mysubsection{Satz}
+\mysubsection{Satz(DEA-Äquivalenz und Rechtskongruenz)\(\diamondsuit\)}
   \begin{itemize}
     \item [(i)] Ist A eine DEA ohne unereichbare Zustände, so gilt \(A \cong A_{\sim A, L(A)}\)
     \item [(ii)] Ist L die Vereinuíngung von Äquivalenzklasse einer Rechtskongruenz \(\sim\) mit endlichem Index, so gilt \((\sim, L) = (\sim_{A_{\sim, L}, L(A_{\sim, L})})\).
@@ -118,7 +118,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     u \sim_L v \leftrightarrow (uw \in L \leftrightarrow vw \in L \quad \forall w \in \Sigma^*)
   \] 
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Sprach-Äquivalenz und Rechtskongruenz)\(\diamondsuit\)} 
   Sei L eine Sprache über \(\Sigma\). 
   \begin{itemize}
     \item [(i)] Die L-Äquivalenz ist eine Rechtskongruent.
@@ -131,7 +131,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
 \mysubsection{Definition (Verfeinerung)} 
   Seien \(\mathcal{A}_1\) und \(\mathcal{A}_2\) partionen einer Menge A. Die Partion \(\mathcal{A}_2\) \textbf{Verefeinert} \(\mathcal{A}_1\) (heißt Verfeinerung von \(\mathcal{A}_1\)), wenn es \(\forall A_2 \in \mathcal{A}_2\) ein \(A_1 \in \mathcal{A}_1\), mit \(A_2 \subseteq A_1\) gibt.
 
-\mysubsection{Bemerkung} 
+\mysubsection{Bemerkung (Partition und Vereinfeinerung)\(\diamondsuit\)} 
   Seien \(\mathcal{A}_1\) und \(\mathcal{A}_2\) Paritionen einer Menge \(A_1\), so dass \(A_2\) die Partion \(\mathcal{A}_1\) verefeinert.
   \begin{itemize}
     \item [(i)] \(\forall A' \in \mathcal{A}_1\), gibt es eine Teilmengen \(\mathcal{A}'_2 \subseteq \mathcal{A}_2\), die eine Partion von A' ist.
@@ -139,7 +139,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
     \item [(iii)] Gilt \(|\mathcal{A}_1| = |\mathcal{A}_2|\) dann ist \(\mathcal{A}_1 = \mathcal{A}_2\)
   \end{itemize}
 
-\mysubsection{Proposition} 
+\mysubsection{Proposition (Äquivalenzpartition und Vereinfeinerung)*} 
   Sei \(\Sigma\) eine Alphabet und L eine Sprache über \(\Sigma\) und \(\sim\) eine Rechtskongruenz auf \(\Sigma^*\) mit \(L = \bigcup \limits_{w \in L} [w]_{\sim}\). Die Partion \(\Sigma^*/\sim\) ist eine Verfeinerung der partition \(\Sigma^*/ \sim L\).
   \begin{proof}
     Seien \(u, v \in \Sigma^*\) mit \(u \sim v\). Es genügt zu zeigen, dass \(u \sim_{L} v\). Sei \(w \in \Sigma^*\). Es genügt \(uw \in L \leftrightarrow vw \in L\) zu zeigen. Da \(\sim\) eine Rechtskongruenz ist dolgt \(uw \sim vw\). Ist \(u, w \in L\), so folgt aus \(L = \bigcup \limits_{w' \in L} [w']_\sim\) auch \(vw \in L\)(analog folgt auch auch \(vw \in L \Rightarrow uw \in L\)).\\ \(\Rightarrow u \sim_L v\).
@@ -149,7 +149,7 @@ Sei A = \((Q, \Sigma, \Delta, s, F)\) eine DEA.
 \mysubsection{Definition (Minimalautomat)} 
   Sei L eine reguläre Sprache über \(\Sigma\). Der Minimalautomat von L als Sprache über \(\Sigma\) ist der DEA \(A_{\sim L, L}\).
 
-\mysubsection{Satz(Charakterisierung regulärer Sprachen)*}
+\mysubsection{Satz(Charakterisierung regulärer Sprachen)\(\diamondsuit\)}
   Sei L eine reguläre Sprache über \(\Sigma\) und sei \(M_(Q, \Sigma, \Delta, s ,F)\) der Minimalautomat von L. Dann gilt:
   \begin{itemize}
     \item [(i)] L(M) = L

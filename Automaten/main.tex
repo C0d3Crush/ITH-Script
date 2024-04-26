@@ -23,7 +23,7 @@ Hinweis: Durch die Einschränkungen wird die Leistungsfähigkeit der Turingmasch
         \paragraph*{\(\leadsto\)}
             Band spielt keine wesentliche Rolle, Zustände mir gerade gelesenen Symbol bilden die Konfiurationen.
 
-\mysubsection{Definition (Übergangsfunktion eines EA)}
+\mysubsection{Definition (Übergangsfunktion)}
     Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA. Die \textbf{Übergangsfunktion} von A ist die Funktion \(\delta_{A} : Q \times \Sigma \rightarrow 2^{Q}\) \footnote{(=Potenzmenge von Q)} mit 
     \[
         \delta_{A}(q,a) = \{q'\in Q : (q, a, q')\in \Delta\} \quad \forall q \in Q, a \in \Sigma
@@ -40,21 +40,21 @@ Hinweis: Durch die Einschränkungen wird die Leistungsfähigkeit der Turingmasch
     \(w\in \Sigma^{*}\). Für \(Q_{0} \subseteq Q\) und \(w \in \Sigma^{*}\) schreiben wir \(\delta_{A}^{*} (Q_{0}, w)\) statt \(\bigcup \limits_{q \in Q_{0}} \delta_{A}^{*}(q,w)\).
     \\ Für einen EA \(A = (Q, \Sigma, \Delta, s, F)\), mit entsprechnder TM \(M_{A} = (Q, \Sigma, \Gamma, \Delta', s, F), q \in Q\) und \(w \in \Sigma^{*}\) ist \(\delta_{A}^{*}(s,w)\) die Menge der zustände, die sich als erst Komp.?? der letzten Konfig einer Rechnung von \(M_{A}\) zur Eingabe zu ergeben.
 
-\mysubsection{Bemerkung (Eigenschaften von endlichen Automaten)*}
+\mysubsection{Bemerkung (Eigenschaften von endlichen Automaten)\(\diamondsuit\)}
 Sei \(A = (Q, \Sigma, \Delta, s, F)\) ein EA
 \begin{itemize}
-    \item [(i)] \( \forall q \in Q\) und \(a\in \Sigma\) gilt \(\delta_{A}^{*}(q,a) = \delta_{A}(q, a)\).
+    \item [(i)] \( \forall q \in Q\) und \(a\in \Sigma\) gilt \(\delta_{A}^(q,a) = \delta_{A}(q, a)\) und \(|\delta^*_A(q,w) = 1\).
     \item [(ii)] Ist A ein DEA, \(q \in Q\), \(a \in \Sigma\) und \(w \in \Sigma^{*}\), und \(\lvert \delta_{A}^{*}(q,w) \rvert\) = 1.
     \item[(iii)] Seien \(u,v \in \Sigma^{*} \quad \forall q \in Q\) gilt \(\delta_{A}^{*}(q, uv) = \delta_{A}^{*}(\delta_{A}^{*}(Q_{0}, u), v)\).
 \end{itemize}
 
-\mysubsection{Definition (Übergangsfunktion eines DEA)}
+\mysubsection{Definition (Deterministische Übergangsfunktion)}
 Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det, A}: Q \times \Sigma \rightarrow Q\) mit \(\delta_{A}(q,a) = \{\delta_{det, A}(q, a)\} \quad \forall q \in Q\) und \(a \in \Sigma\) wird auch \textbf{Übergangsfunktion} von A gennant. Analoges gilt für \(\delta_{det, A}^{*}(Q_{0}, w)\) statt \(\bigcup \limits_{q \in Q_{0}}\{\delta_{det, A}^{*}(q, w)\}\).
 
-\mysubsection{Bemerkung (Folgerungen für DEA)*}
+\mysubsection{Bemerkung (Folgerungen für DEA)\(\diamondsuit\)}
     Ist \(A = (Q, \Sigma, \Delta, s, F)\) ein DEA, so gelten \hyperref[subsec:4.3]{Berkung 4.3 (i)} und \hyperref[subsec:4.3]{(iii)} auch wenn \(\delta_{A}\) durch \(\delta_{det, A}\) und \(\delta_{A}^{*}\) durch \(\delta_{det, A}^{*}\) ersetzt wird.
 
-\mysubsection{Bemerkung(Eindeutigkeit endlicher Automaten)*}
+\mysubsection{Bemerkung(Eindeutigkeit endlicher Automaten)\(\diamondsuit\)}
     Sei Q eine endliche Menge, \(\Sigma\) ein Alphabet, \(s\in Q\), und \(F\subseteq Q\). 
     \begin{itemize}
         \item [(i)] \(\forall\) Funktionen \(\delta : Q \times \Sigma \rightarrow 2^{Q}\) gibt es genau einen EA \(A = (Q, \Sigma, \Delta, s, F)\) mit \(\delta_{A} = \delta\).
@@ -68,7 +68,9 @@ Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det
     Eine Sprache L heißt \textbf{regulär} wenn es einen EA A mit L(A) = L gibt. Wir schreiben \textbf{REG} für die Klasse der regulären Sprachen. Zu jedem Zeitpunkt während der Verbindung der Eingabe durch einen endlichen Automaten höngt der restliche Bearbeitung immer nur vom gegewärtigen Zustand und dem noch einzulesenden Teil der Eingabe ab, nicht aber wie bei TM im allgemeinen von vergangenen Bandmanipulation. Interpretiert man die Eingabe als von einer äußeren Quelle kommend, so ist der  Zustand des Automaten also allein durch seinen Zustand gegeben und der nächste Zustand hängt nur vom Zugeführten Symbol ab. Daher bietet sich eine Darstellung eines EA durch ein Übergangsdiagramm oder eine sogenannte Übergangstabelle an.
 
 \newpage
-\mysubsection{Beispiel (Endlicher Automat A)*}
+%\mysubsectionnew{Beispiel (Endlicher Automat)}{test}
+
+\mysubsection{Beispiel (Endlicher Automat A)\(\diamondsuit\)}
     Sei \(A := (\{q_{0}, q_{1}\}, \{0, 1\}, \Delta, q_{0}, \{q_{1}\})\) mit \(\Delta = \{(q_{0})\}\). Das Übergangsdiagramm und die Übergangstabelle sehen wie folgt aus:
 
     \begin{center}
@@ -124,7 +126,7 @@ Sei \(A = (Q, \Sigma,  \Delta, s, F)\) eine DEA. Auch die Funktion \(\delta_{det
         Anmerkung: Es gibt eine einfache möglichkeit einen nicht Deterministischen Automaten in einen Deterministischen umzuwanden. Das wird hier in Zukunft beschrieben. Siehe Tutoriumaufschrieb. (das wird hier in zukunft angefügt)
     }
 
-\mysubsection{Satz(Charakterisierung regulärer Sprachen)*}
+\mysubsection{Satz(Charakterisierung regulärer Sprachen)\(\diamondsuit\)}
     Eine Sprache L ist genau dann regulär, wenn es eine DEA A mit L(A) = L gibt. 
 
     \begin{proof}

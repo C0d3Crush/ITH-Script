@@ -55,6 +55,8 @@
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{svg}
+\usepackage{marginnote}
+
 
 
 
@@ -162,13 +164,8 @@
 \usetikzlibrary{arrows, positioning, calc}
 \newtheorem{newproposition}{Proposition}[subsection] % Propositionen werden nach Subsections nummeriert
 
-
-% Funktion für ein Kapitel
-\newcommand{\mychapter}[1]{%
-  \chapter{#1}%
-  \label{sec:\theHchapter}%
-}
-
+\begin{document}
+\(\mathcal{M}_e\)
 % Funktion für eine Section
 \newcommand{\mysection}[1]{%
   \section{#1}%
@@ -185,6 +182,15 @@
 \newcommand{\mysubsubsection}[1]{%
   \subsubsection{#1}%
   \label{subsubsec:\thesubsubsection}%
+}
+
+\newcommand{\createDiagram}[2]{%
+  \begin{figure}[htp]
+    \centering
+    #2
+    \caption{#1}
+    \label{fig:#1}
+  \end{figure}%
 }
 
 \newcommand{\coversection}[3]{
@@ -209,16 +215,6 @@
   \clearpage % Add an empty page after the section page
 }
 
-\newcommand{\createDiagram}[2]{%
-  \begin{figure}[htp]
-    \centering
-    #2
-    \caption{#1}
-    \label{fig:#1}
-  \end{figure}%
-}
-
-\begin{document}
 
 \toggleDarkMode % Set the mode based on \darkmodetrue or \darkmodefalse
 
@@ -259,7 +255,9 @@
 \newpage
 
 \include{Grundlagen/main}
+\include{Grundlagen/Aufgaben}
 \include{Turingmachine/main}
+\include{Turingmachine/Aufgaben}
 \include{Berechenbarkeit/main}
 \include{Automaten/main}
 \include{ReguläreSprachen/main}

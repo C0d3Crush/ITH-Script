@@ -23,6 +23,8 @@
         \item[(iv)] \(a \leq  b \vee b \leq  a \forall a,b \in A\) (Totalität)
     \end{enumerate} 
 \end{itemize}
+\newpage
+   
 
 \mysubsection{Alphabet, Wörter und Sprachen}
     Eingaben und Ausgaben in unseren Berechnungsmodellen werden wörter genannt, wobei wir beliebige Zeichenketten als Wörter zulassen.
@@ -39,7 +41,7 @@
 \mysubsubsection{Definitio (Sprache)}
     Eine \textbf{Sprache} ist eine Menge von Wörter über einem gemeinsahmen Alphabet \(\Sigma\). Einige einfache grundlegenden Sprachen sind die folgenden.
 
-\mysubsubsection{Definition(Wortmengen-Notation)*} 
+\mysubsubsection{Definition(Wortmengen-Notation)\(\diamondsuit\)} 
     Die Menge Aller Wörter über \(\Sigma\) wird mit \(\Sigma^{*}\) \footnote{Kleene-Stern, nach Stephen Cole Kleene, 1909-1994}
     bezeichnet. Für \(n \in \mathbb{N}_{0}\) setzen wir:
     \begin{itemize}
@@ -83,7 +85,7 @@
 \end{itemize}
 \textbf{Bemerkung: }Oft gehen wir von einer impliziten Ordnung auf \(\Sigma\) aus. Ist \(\Sigma = {a_{1}, \cdots, a_{n}}\) so gilt\( a_{1}\leq \cdots \leq a_{n}
 \)
-\mysubsubsection{Bemerkung(Endliche längenlexikographische Reihenfolge)*} 
+\mysubsubsection{Bemerkung(Längenlexikographie, Identifikation, natürliche Zahlen)\(\diamondsuit\)} 
     Sei \(\Sigma\) ein Alphabet \(\forall w \in \Sigma^{*}\) ist \({v\in \Sigma^{*} : v \leq_{llex}w}\) endlich. Dies erlaubt es uns für ein Alphabet \(\Sigma\) die Wörter über \(\Sigma\) in längenlexilographischen Reihenfolge \(w_{1}, w_{2}, \cdots\) zu betrachten, wobei wir \(w_{i}\) für \(i \in \mathbb{N}\) als kleinstes Element von \(\Sigma^{*}/{w_{1},\cdots, w_{i-1}}\) gewählt sei. Wir identifizieren oft \(\mathbb{N}_{0}\) mit \(\{0, 1\}^{*}\) indem wir \(i \in \mathbb{N}_{0}\) mit in die längenlexilographische Reihenfolge (i+1)-ten Wort \( w_{i+1} \in \{0,1\}^{*}\) identifiziernen.
     \begin{center}
         \begin{tabular}{ c c c c c }
@@ -92,8 +94,8 @@
         \end{tabular}
     \end{center}
 
-\mysubsubsection{Definition(Binärwort-Funktion in längenlexikographischer Reihenfolge)*}
+\mysubsubsection{Definition(Binärwort-Funktion in längenlexikographischer Reihenfolge)\(\diamondsuit\)}
     Es bezeichnet bin : \(\mathbb{N}_{0} \rightarrow \{0, 1\}^{*}\) die Funktion, für die bin(i) das in längenlexikographischer Reihenfolge (i+1)-te Binärwort ist \(\forall i \in \mathbb{N}_{0}\)
 
-\mysubsubsection{Bemerkung(Beziehung zwischen Binärworten und Dezimalzahlen)*}
+\mysubsubsection{Bemerkung(Beziehung zwischen Binärworten und Dezimalzahlen)\(\diamondsuit\)}
     \(\forall i \in \mathbb{N}_{0}\) ist 1 bin(i) die Binärdarstellung von i+1. Umgekehrt ist \(\forall w \in {0, 1}^{*}\) das \((2^{|w|} + \underset{i \in [|w|]}{\Sigma} w(i) 2^{|w|-i})\)-te Binärwort.

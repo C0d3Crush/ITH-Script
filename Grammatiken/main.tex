@@ -30,7 +30,7 @@
     
 \mysubsection{Definition (Erzeugte Sprache)}
     Sei \(G=(N,T,P,S)\) eine Grammatik. Die von G erzeugte Sprache \(L(G)\) ist die Menge aller Wörter \(w\in T^*\) für die es eine Ableitung von w in G gibt.
-\mysubsection{Lemma} 
+\mysubsection{Lemma (Ableitungslänge in Grammatiken\(\diamondsuit\))} 
     Sei \(G=(N,T,P,S)\) eine Grammatik und seien u,v,x,y Satzformen von G und seien \(n,m\in\mathbb{N}\) mit \(u\to_G^nv\) und \(w\to_u^nxuy\).\\
     Dann gilt \(w\to_u^{m+n-1}xvy\).
 \begin{proof}
@@ -40,7 +40,7 @@
     Im folgenden beschäftigen wir uns mit dem Thema welche Sprache Grammatiken verschiedener Komplexitätsstufen erzeugen können.
 \end{proof}
 
-\mysubsection{Satz}
+\mysubsection{Satz (RE-Sprachen und Grammatiken)\(\diamondsuit\)}
     Eine Sprache ist genau dann rekuriv aufzählbar, wenn sie von einer Grammatik erzeugt wird.
 \paragraph*{Beweisidee} 
     Wird eine Sprache $L$ von einer Grammatik erzeugt, so ist $L$ die erkannte Sprache einer TM, die in geeigneter Weise Ableitungen von $G$ erzeugt, prüft ob diese Ableitung dem Wort der Eingabe entspricht und gegebenfalss akzeptiert. Wenn eine Ableitung der Eingabe gefunden ist.\par\bigskip
@@ -50,7 +50,7 @@
     \[X\in uy \text{ oder } X\to u\]
     mit \(X,y\in\mathbb{N}\) und \(u\in T^*\) sind.\par\bigskip 
     Hier ist es sinnvoll endliche Automaten zu betrachten bei denen es nicht \(\forall\) Zustände q und Eingabesymbole a ein Tripel \((q,a,q')\) in der Übergangsrelation geben muss. Solche Automaten sind zwangsläufig nicht deterministisch.
-\mysubsection{Satz}
+\mysubsection{Satz (Reguläre Sprachen, rechtslineare Grammatiken)\(\diamondsuit\)}
     Eine Sprache ist genu dann regulär, wenn sie von einer rechtslinearen Grammatik erzeugt wird.
 \paragraph*{Beweisidee}
     Zunächst überzeugt man sich davon, dass eine Sprache L genau dann von einer rechtlinearen Grammatik erzeugt wird, wenn sie von einer Grammatik \(G=(N,T,P,S)\) erzeugt wird bei der alle Regeln von der Form \(X\to ay\) oder \(X\to \lambda\)\\
@@ -66,7 +66,7 @@
     erkannt.\\
     Umgekehrt ist es einfach zu sehen, dass jede Reguläre Sprace von einer rechtslinearen Grammatik erzeugt wird. 
 
-\mysubsection{Beispiel}
+\paragraph*{Beispiel}
     Die Sprache \(\{0\}^*\) wird von der rechtlinearen Grammatik \[ G = (\{S\},\ \{0,\ 1\}^*,\ \{S \to 0S,\ S \to \lambda\},\ S)\] erzeugt von EA \[A = (\{S\},\ \{0,\ 1\}^*,\ \{(S,\ 0,\ S)\},\ S, \{S\})\] erkannt. Sowohl auf der Seite der Machinenmodelle als auch auf der Seite der Grammatiken gibt es weitere wichtige Sprachklassen, die sich ergeben wenn der Maschinenarbeitsweise oder Menge der zulässigen Regeln weniger stark eingeschränkt wird bei EA und rechtslinear Grammatiken.
 
 \mysubsection{Definition (kontextfrei)} 
@@ -182,7 +182,7 @@
 \mysubsection{Definition (Baum)} 
     Eine endliche nicht leere Sprache T heißt \textbf{Baum}, wenn sie unter Präfixbildung abgeschlossen ist, also wenn für alle \(w \in T\) und \(p \sqsubseteq w\) auch \(p \in T\) gilt. Ein Wort \(w \in T\) heißt \textbf{Blatt} von T, wenn w bezüglich \(\sqsubseteq \) maximal in T istm also wenn \(w = w' \quad \forall w' \in T\) mit \(w \sqsubseteq w'\) gilt. Wörter \(w \in T\), die keine Blätter von T sind heißen \textbf{innere Ecken} von T.
 
-\mysubsection{Lemma}
+\mysubsection{Lemma (Lexikographische Ordnung auf Wörtern)\(\diamondsuit\)}
     Sei \(\Sigma\) eine Alphabet und \(\leq\) die lexikographische Ordnung auf \(\Sigma^*\). Seien \(u, w \in \Sigma^*\) mit \(u \not \sqsubseteq w\) und \(u \leq w\). Seien \(v_1<\cdots<v_n \in \Sigma^*\) mit \(v_1 \not = \lambda\). Dann gilt \(u < u v_1< \cdots < uv_n < w\)
 
     \createDiagram{Baum und Präfixbildung}
@@ -216,7 +216,7 @@
 
 \newpage
 
-\mysubsection{Lemma}
+\mysubsection{Lemma (Lexikographische Ordnung auf einem Baum)\(\diamondsuit\)}
     Sei T ein Baum, \(\leq\) die lexikographische Ordnung auf T, \(p \in T\) und \(Q:=\{w\in T: p\sqsubseteq w\}\). Es gelten \(p = min Q\) und \(Q = \{w \in T : min Q \leq w \leq max \leq max Q\}\). 
 
     \createDiagram{}
@@ -334,14 +334,14 @@
     \end{itemize}
     Die \textbf{Blätter} von (T, b) sind die Blätter von T und die \textbf{inneren Ecken} von (T, b) sind die inneren Ecken von T.
 
-\mysubsection{Beispiel}     
+\paragraph{Beispiel}     
     Sei \(G = (\{S\},\ \{0,\ 1\},\ \{S \to 0S1,\ S \to \lambda\},\ S),\ T = \{\lambda,\ 1,\ 2,\ 3,\ 21,\ 22,\ 23,\ 221\}\) und sei \(b:T\to\{S,\ 0,\ 1,\ \lambda\}\) die Beschriftung mit \(b(\lambda) = b(2) = b(22) = S,\ b(1) = b(21) = 0\) und \(b(221) = \lambda\). Dann ist (T, b) ein Ableitungsbaum von 0011 aus S un G. Die \textbf{Darstellung} von T sieht wi folgt aus: \[HIERABBEINFÜGEN\]
     \createDiagram{Darstellung von T}{}
 
     \[Visualisierung 1 + 2 \]
     \createDiagram{Colorization}{}
 
-    \mysubsection{Lemma}
+    \mysubsection{Lemma (Ableitungsbaum in einer kontextfreien Grammatik)\(\diamondsuit\)}
     Sei \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik und \(w_1, \cdots, w_l\) eine Ableitung von w aus S in G. Dann gibt es einen Ableitungsbaum (T, b) von w aus S in G mit \(l-1\) innere Ecken. 
     \begin{proof}
         Induktion über l.\\
@@ -349,9 +349,11 @@
         Sei nun \(l \geq 2\) und die Aussage wahr \(\forall l' < l\). Sei (T', b') ein Ableitungsbaum von \(w_{l-1}\) aus S in G mit \(l-2\) innere Ecken (existiert per Induktions Hypotese). Sei \(w' := w_{l-1}\). Sei \(i \in [|w'|]\) und \(v \in (N \cup T)^*\) mit \(w'(i) \to v \in P\) und \(w = w'(1) \cdot w'(i-1) v w'(i+1)\cdots w'(|w'|)\). Sei t' das in lexikographischer Reihenfolge i-te Blatt von T' und sei (T, b) der Ableitungsbaum mit \(T = T' \cup \{t'a : a \in [|v|]\},\ b(\tilde{w}) = b'(\tilde{w}) \quad \forall \tilde{w} \in T'\) und \(b(t'a) = v(a) \quad \forall a \in [|v|]\). Aus Lemma 6.12 folgt dann, dass w das Blattwort von (T, b) ist. Außerdem ist die Anzahl der inneren Ecken von T durch \(l - 2 + 1 = l - 1\) gegeben.
     \end{proof}
 
-\mysubsection{Lemma} 
-    Sei \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik und (T, b) ein Ableitungsbaum von w aus S in G mit \(l - 1\) inneren Ecken. Dann gibt es eine Ableitung \(leq = w_1, \cdots\) 
+\mysubsection{Lemma (Ableitungslänge in kontextfreien Grammatiken)\(\diamondsuit\)} 
+    Sei \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik und (T, b) ein Ableitungsbaum von w aus S in G mit \(l - 1\) inneren Ecken. Dann gibt es eine Ableitung \(\leq = w_1, \cdots\) 
     \[ohne beweis\]
+
+    ??? ist hier ein fehler drin?
 
 
 \newpage
@@ -466,7 +468,7 @@
     \end{center}
     Da T minimal ist gilt \(vx \not = \lambda\). Da \(|t| = |N| + 2\), ist die Anzahl der Ecken in \(T_2, b_2\) höchstens \(k \Rightarrow |vwx| \leq k\). Aus \(\circledast\) folgt \(uv^iwx^iy \in L \quad \forall i \in \mathbb{N}_0\)
 
-\mysubsection{Beispiel}
+\paragraph{Beispiel}
     \(L = \{0^n 1^n 0^n : n\in \mathbb{N}_0\} \not \in \textbf{CF}\) lässt sich mit dem Pumping-Lemma für kontextfreie Sprachen wie folgt zeigen:
     \begin{proof}
         Angenommen \(L \in \)\textbf{CF}. Sei \(k \in \mathbb{N}\) für L wie im Satz 6.20 gewählt. Sei \(z:=0^k1^k0^k\). Seien u, v, w, x, y \(\in \{0, 1\}^*\) gemäß der Wahl von k Wörter mit uvwxy = z, \(vx \not = \lambda\), \(|vwx| \leq k\) und \(uv^iwx^iy \in L \quad \forall i \in \mathbb{N}_0\). Aus \(uvwxy = z\) und \(|vwx| \leq k\) folgt, dass \(r, s \leq k\) mit \(u = 0^r \wedge y = 1^s0^k\) oder \(u = 0^k 1^r \wedge y = 0^s\) existieren. Wegen \(vx \not = \Lambda\) existieren also \(r, s \leq k\) mit \(r \leq k - 1\) oder \(s \leq k -1\) so dass \(uwy = 0^r1^s0^k\) oder \(uwy = 0^k1^r0^s\) gilt. In jedem Fall gilt also \(uwy \not \in L\) im Wiederspruch dazu, dass \(uv^iwx^iy \in L \quad \forall i \in \mathbb{N}_0\) gilt.
@@ -481,10 +483,10 @@ Die Konstruktion von \textbf{Kellerautomaten} folgt den folgenden Ideen:
 \end{itemize}
 Bei geeigneter Formalisierung von Kellerautomaten lösst sich folgendes zeigen.
 
-\mysubsection{Satz}
+\mysubsection{Satz (Kellerautomaten und Kontextfreie Sprachen)\(\diamondsuit\)}
     Eine Sprache wird genau dann von Kellerautomaten erkannt, wenn sie kontextfrei ist.
 
-\mysubsection{Beispiel}
+\mysubsection{Beispiel (Kontextfreie Grammatik und Kellerautomat")\(\diamondsuit\)}
     Die Sprache \(\{0^n1^n : n\in \mathbb{N}_0\}\) wird von der kontextfreien Grammatik 
     \[
         G = (\{S\}, \{0, 1\}, \{S \to 0S1, S \to \lambda\}, S)
@@ -501,7 +503,7 @@ Bei geeigneter Formalisierung von Kellerautomaten lösst sich folgendes zeigen.
 \mysubsection{Definition (nicht verkürzend)}
     Eine Grammatik \(G = (N, T, P, S)\) ist \textbf{nichtverkürzend}, wenn alle Regeln von G von der Form \(u \to v\) mit \(u,v \in (N \cup T)^* \) mit \(|u| \leq |v|\) sind.
 
-\mysubsection{Satz}
+\mysubsection{Satz (Kontextsensitive Sprachen und nichtverkürzte Grammatiken)\(\diamondsuit\)}
     Eine Sprache L ist genau dann kontextsensitiv, wenn \(L / \{\lambda\}\) von einer nichtverkürzten grammatik erzeugt wird.
     \begin{proof}
         \textbf{Beweisidee: } Kontextsensitive grammatiken sind immer nichtverkürzend. Es genügt also nichtverkürzende Grammatiken in kontextsensitive Grammatiken umzuwanden. Jede nichtverkürzende Grammatik kan in eine nichtverkürzende Grammatik umgewandeln, die dieselbe Sprache erzeugt, sodass alle Regeln von der From 
@@ -533,10 +535,10 @@ Bei geeigneter Formalisierung von Kellerautomaten lösst sich folgendes zeigen.
 \mysubsection{Beschreibung (linear beschränkter Automat)}
     Ein linear beschränkter Automat, kurz LBA, ist ein l-TM M, die \(\forall\) Wörter w über dem Eingabealphabet in allen Rechnungen von M zur Eingabe w nur die durch den Eingabemechanismus mit den Symbolen von w beschränkten Feldern und die an diese angrenzenden Felder besucht.
 
-\mysubsection{Satz}
+\mysubsection{Satz (Kontextsensitive Sprachen, LBA)\(\diamondsuit\)}
     Eine Sprache ist genau dann kontextsensitiv, wenn sie von einem LBA erkannt wird. \[ohne beweis\]
 
-\mysubsection{Beispiel}
+\mysubsection{Beispiel (Chomsky-Hierarchie)\(\diamondsuit\)}
     Die Sprache \(\{0^n1^n0^n : n \in \mathbb{N}\}\) wird von einer nicht verkürzenden Grammatik \(G = (N, \{0,\ 1\}, P,\ S)\) erzeugt mit \(N =\{S,\ A,\ B,\ C,\ \tilde{A},\ \tilde{B},\ \tilde{C}\}\) und 
     \[
         P = S \to \tilde{A} B \tilde{C}, S \to 010,\ \tilde{C} \to CAB \tilde{C},\ BA \to AB,\ CA \to AC,\ CB\to BC,\ \tilde{A}A \to 0\tilde{A},\ \tilde{A}B \to 0\tilde{B},\ \tilde{B}B
@@ -544,16 +546,16 @@ Bei geeigneter Formalisierung von Kellerautomaten lösst sich folgendes zeigen.
 
     Diese Sprachklassen bilden die \textbf{Chomsky-Hirarchie}
 
-\mysubsection{Definition}
+\mysubsection{Definition (Chomsky-Hierarchie CH(0) bis CH(3))\(\diamondsuit\)}
     Die Klassen der Chomsky-Hirarchie sind \textbf{CH}(0) := \textbf{RE}, \textbf{CH}(1) := \textbf{CS} \textbf{CH}(2) := \textbf{CF}, \textbf{CH}(3) := \textbf{REG}
     
-\mysubsection{Satz}
+\mysubsection{Satz (Inklusionen in der Chomsky-Hierarchie)\(\diamondsuit\)}
     Es gilt \[\textbf{REG} \not \subseteq \textbf{CF} \not \subseteq \textbf{CS} \not \subseteq\textbf{REC}\not \subseteq \textbf{RE}\]
     \begin{proof}
         \textbf{Beweisidee: } Für die Echtheit der Inklusionen siehe Beispiel 6.33. Für die Gültigkeit der Inklusionen bleiben \textbf{CF} \(\leq\) \textbf{CS} und \textbf{CD} \(\leq\) \textbf{REC} zu zeigen. Ist \(G = (N,\ T,\ P,\ S)\) eine kontextfreie Grammatik, so erhält man die Menge P' der Regeln einer kontextsensitiven Grammatik \(G' = (N,\ T,\ P',\ S)\) mit \(L(G) = L(G)/ \{\lambda\}\) wenn ausgehend von P in zewi Schnitten wie folgt verfahren wird. Zunächst werden alle Regeln \(X \to u \in P\) die Regeln \(X \to u'\) hinzugefügt, bei denen u' aus u entsteht indem ein oder mehrere Symbole aus u entfernt werden für die es eine Ableitung von \(\lambda aus Y\) gibt. Dann werden alle Regeln der Form \(X \to \lambda\) entfehrnt. \(\Rightarrow\) \textbf{CF} \(\subseteq\) \textbf{CS}\\ Jede kontextfreie Sprache ist entscheidbar, denn zu einem geeignet gesetzten LBA M kann wegen der endlichen Anzahl von Konfigurationen von M effektiv von einerTM entschieden ob dieser eine gegebene Eingabe akzeptiert oder nicht.
     \end{proof}
 
-\mysubsection{Beispiel}
+\mysubsection{Beispiel(Sprachen in verschiedenen Klassen)\(\diamondsuit\)}
 \begin{itemize}
     \item [(i)] Die Sprache \(L_1 = \{1^n : n\in \mathbb{N}\}\) ist offensichtlich regulär.
     \item [(ii)] Die Sprache \(L_2 = \{0^n1^n: n \in \mathbb{N}\}\) ist kontextfrei (Beispiel 6.24), aber nicht regulär -> Pumping Lemma.

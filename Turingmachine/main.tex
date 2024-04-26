@@ -84,7 +84,7 @@
 \mysubsection{Definition (Rechnung)} 
   Sei \(M = (Q, \Sigma, \Gamma, \Delta, s, F)\) eine k-DTM. Eine \textbf{endliche partielle Rechnung} von M ist eine endliche Folge \(C_{1}, \cdots, C_{n}\) von Konfig von M mit \(C_{i} \rightarrow_{M} C_{i+1} \forall i \in [n-1]\). Eine \textbf{unendliche partielle Rechnung} von M ist eine unendliche Folge \(C_{1}, C_{2}, \cdots\) von Konfigration von M mit \(C_{1} \rightarrow_{M} C_{1+1} \forall i \in \mathbb{N}\). Eine \textbf{Rechnung von M zur Eingabe } \((w_{1}, \cdots, w_{n}) \in (\Sigma^*)^n\) (mit \(n \in \mathbb{N}\)) ist eine endliche partielle Rechnung \(start_M = C_1, \cdots, C_m\) bei der \(C_m\) eine Stoppkonfiguration von M oder eine unendliche partielle rechnung \(start_M(w_1, \cdots, w_n) = C_1, C_2, \cdots\)
 
-\mysubsection{Bemerkung (Eindeutige Rechnungen bei k-DTM.)*} 
+\mysubsection{Bemerkung (Eindeutige Rechnungen bei k-DTM.)\(\diamondsuit\)} 
   Ist M eine k-DTM, so gilt es \(\forall n \in \mathbb{N}\) und \((w_1, \cdots, w_n) \in (\Sigma^*)^n\) genau eine Rechnung zur Eingabe \((w_1, \cdots, w_n)\).
 
 \mysubsection{Definition (total)} 
@@ -103,13 +103,13 @@
   Eine Menge wird beschreiben, die wir mit einem Computerprogramm oder Algorithmus "auflisten" können. Stellen Sie sich vor, Sie haben eine Box mit nummerierten Bällen, und Sie haben ein Programm, das Bälle aus der Box zieht. Wenn Sie sicherstellen können, dass Sie jeden Ball in der Box mindestens einmal ziehen, egal wie lange es dauert, dann ist die Menge der Bälle in der Box "rekursiv aufzählbar
   \footnote{Ed. sug. text}
 
-\mysubsection{Bemerkung (Entscheidbare Sprache und rekursiv aufzählbare Sprache)*} 
+\mysubsection{Bemerkung (Entscheidbare Sprache und rekursiv aufzählbare Sprache)\(\diamondsuit\)} 
   Jede entscheidbare Sprache ist rekursiv aufzähbar.
 
-\mysubsection{Bemerkung (Endliche Sprachen sind entscheidbar.)*} 
+\mysubsection{Bemerkung (Endliche Sprachen sind entscheidbar.)\(\diamondsuit\)} 
   Alle endlichen Sprachen sind entscheidbar.
 
-\mysubsection{Bemerkung (Entscheidbarkeit und Aufzählbarkeit.)*} 
+\mysubsection{Bemerkung (Entscheidbarkeit und Aufzählbarkeit.)\(\diamondsuit\)} 
   Eine Sprache L über einem Alphabet \(\Sigma\) ist genau dann entscheidbar, wenn L und \(L^c :=(\Sigma^*)/L\) rekursiv aufzähbar sind.
 
 \mysubsection{Definition (Ausgabe)} 
@@ -137,7 +137,7 @@
     \item [(ii)] Die \textbf{ partielle charackteristische Funktion} von L als Sprache über \(\Sigma\) ist die partielle Funktion \(x_L : \Sigma^* \leadsto \{1\}\) mit \(x_L(w) = 1 \quad \forall w \in L\) und \(x_L(w) \uparrow \quad \forall w \in \Sigma^* / L\). 
   \end{itemize}
 
-\mysubsection{Bemerkung (Entscheidbarkeit und Berechenbarkeit)*} 
+\mysubsection{Bemerkung (Entscheidbarkeit und Berechenbarkeit)\(\diamondsuit\)} 
   Sei L eine Sprache über einem Alphabet \(\Sigma\). 
   \begin{itemize}
     \item [(i)] L ist genau dann entscheidbar, wenn \(\mathbbm{1}_L\) berechenbar ist.
@@ -260,7 +260,7 @@
 
     }
     
-\mysubsection{Bemerkung (Entscheidbarkeit, Aufzählbarkeit, Berechenbarkeit.)*} 
+\mysubsection{Bemerkung (Entscheidbarkeit, Aufzählbarkeit, Berechenbarkeit.)\(\diamondsuit\)} 
   Sei \(L \subseteq \{0, 1\}^*\) eine Sprache und sei \(\Phi : \{0, 1\}^* \leadsto \{0, 1\}^*\) eine partielle Funktion.
   \begin{itemize}
     \item [(i)] L ist genau dann entscheidbar, wenn L akzeptierte Sprache einer totalen normierten TM ist. 

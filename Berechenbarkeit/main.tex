@@ -1,5 +1,5 @@
 \coversection{Berechenbarkeit/predic.png}{Berechenbarkeit}{Predictability is like knowing the path a river takes. The river starts at its source and flows down to the sea. Along the way, it may turn, twist, and divide, but it always follows the path of least resistance due to gravity. Knowing the terrain allows us to predict where the river will go.\\ \hspace*{\fill} - ChatGPT}
-\textbf{Konvention: } Sprechen wir von einer \(e \in \mathbb{N}_0\) oder \((e_1, \cdots, e_n) \in \mathbb{N}_0^n\) wobei \(n \in \mathbb{N}\) als Eingabe für eine TM oder Ausgabe einer TM, so bedetet dies, dass die Eingabe bzw. Ausgabe \(bin(e)\) bzw \((bin(e_1), \cdots, bin(e_n))\) ist. Dies erlaubt es über partiell berechnenbare Funktionene \(\Phi: \mathbb{N}_0^n \leadsto \mathbb{N}_0\) wobei \(n\in \mathbb{N}\) zu sprechen und \(L \subseteq \mathbb{N}_0\) als Sprache über \(\{0, 1\}\) aufzufassen.
+\paragraph{Konvention: } Sprechen wir von einer \(e \in \mathbb{N}_0\) oder \((e_1, \cdots, e_n) \in \mathbb{N}_0^n\) wobei \(n \in \mathbb{N}\) als Eingabe für eine TM oder Ausgabe einer TM, so bedetet dies, dass die Eingabe bzw. Ausgabe \(bin(e)\) bzw \((bin(e_1), \cdots, bin(e_n))\) ist. Dies erlaubt es über partiell berechnenbare Funktionene \(\Phi: \mathbb{N}_0^n \leadsto \mathbb{N}_0\) wobei \(n\in \mathbb{N}\) zu sprechen und \(L \subseteq \mathbb{N}_0\) als Sprache über \(\{0, 1\}\) aufzufassen.
 
 \mysubsection{Definition (Code)} 
   Wir betrachten die Funktion code (mit geeignetem Definitionsbereich) und Zielmenge \(\{0, 1\}^*\), für die folgendes gilt. Zunächst gelte 
@@ -29,8 +29,8 @@
   \paragraph{Konvention: } 
     Ergibt sich n aus dem Kontext, so schreiben wir auch \(\Phi_e\) statt \(\Phi_e^n\)
 
-\mysubsection{Bemerkung(Unendlich viele Indizes)*} 
-  Für \(n \in \mathbb{N}\) und eine partielle berechnbare n-äre partielle Funktion \(\Phi : \mathbb{N}_0^n \rightarrow \mathbb{N}_0\) gibt es unendlich viele Indizes von \(\varphi\).
+\mysubsection{Bemerkung(Unendlich viele Indizes)\(\diamondsuit\)} 
+  Für \(n \in \mathbb{N}\) und eine partielle berechnbare n-äre partielle Funktion \(\varphi : \mathbb{N}_0^n \rightarrow \mathbb{N}_0\) gibt es unendlich viele Indizes von \(\varphi\).
 
 \mysubsection{Definition (U)} 
   Es bezeichnet U die normierte TM, die bei Eingabe \((e, x_1, \cdots, x_n) \in \mathbb{N}_0^{n+1}\) wobei \(n \in \mathbb{N}\) die normierte TM \(\mathcal{M}_e\) bei Eingabe \((x_1, \cdots, x_n)\) simuliert und falls diese terminiert die Ausgabe der Simulierten ausgibt.
@@ -38,7 +38,7 @@
 \mysubsection{Definition (Universell)} 
   Eine DTM U heißt \textbf{Universell}, wenn es für alle \(n \in \mathbb{N}\) und alle partiell berechenbaren Funktionen \(\varphi : \mathbb{N}_0^n \leadsto \mathbb{N}_0\) eine \(e \in \mathbb{N}\), so dass \[U(e, x_1, \cdots, x_n) = \varphi(x_1, \cdots, x_n)\] \(\forall x_1, \cdots, x_n \in \mathbb{N}_0\) gilt.
 
-\mysubsection{Bemerkung(Universelle Turingmaschine U)*} 
+\mysubsection{Bemerkung(Universelle Turingmaschine U)\(\diamondsuit\)} 
   Die TM U ist universell, denn für \(e \in \mathbb{N}_0\), \(n \in \mathbb{N}\) und \(x_1, \cdots, x_n \in \mathbb{N}_0\) gilt 
   \[
     U(e,x_1, \cdots, x_n) = \Phi_e(x_1, \cdots, x_n)
@@ -56,7 +56,7 @@
 \mysubsection{Satz (\(s_n^m\) - Theorem)} 
   \(\forall m, n \in \mathbb{N}\) existiert eine berechenbare Funktion \(s_n^m : \mathbb{N}_0^{m+1} \to \mathbb{N}_0\)  mit 
   \[
-    \Phi_e^{m+1}(x_1\cdots, x_m, y_1, \cdots, y_n) = \Phi_{s_n^m(e, x_1, \cdots, x_m)}^n (y_1, \cdots, y_n)
+    \Phi_e^{m+n}(x_1\cdots, x_m, y_1, \cdots, y_n) = \Phi_{s_n^m(e, x_1, \cdots, x_m)}^n (y_1, \cdots, y_n)
   \]
   \(\forall e, x_1, \cdots, x_m, y_1, \cdots, y_n \in \mathbb{N}_0\)
 
@@ -97,7 +97,7 @@
 \mysubsection{Definition (diagonales Halteproblem)} 
   Die Menge \(H_{diag} := \{e \in \mathbb{N}_0 : \Phi_e (e) \downarrow\}\) heißt \textbf{diagonales Halteproblem}.
 
-\mysubsection{Proposition(Diagonales Halteproblem)*} 
+\mysubsection{Proposition(Diagonales Halteproblem)\(\diamondsuit\)} 
   Das diagonale Halteproblem ist rekursiv aufzählbar.
   \begin{proof}
     Die DTM, die bei Eingabe \(e \in \mathbb{N}_0\) wie \(U\) bei Eingabe \((e, e)\) arbeitet, aber bei terminieren \(1\) statt der Ausgabe von \(U\) ausgibt berechnet die partielle charachteristische Funktion von \(H_{diag}\). Die partielle Funktion \(x_{H_{diag}}\) ist also partiell berechenbar. Die partielle Funktion \(x_{H_{diag}^c}\) ist nicht partiell berechenbar, dann: Betrachte Standardaufzählung
@@ -126,7 +126,7 @@
   \end{cases}\)
   Wird nicht aufgezählt.
 
-\mysubsection{Satz(Diagonalhalteproblem - Nicht entscheidbar)*} 
+\mysubsection{Satz(Diagonalhalteproblem - Nicht entscheidbar)\(\diamondsuit\)} 
   Das diagonale Halteproblem ist nicht entscheidbar. 
   \begin{proof}
     Angenommen \(H_{diag}\) wäre entscheidbar. Dann wäre die partielle charakteristische Funktion \(\varphi\) von \(H_{diag}^c = \mathbb{N}_0 / H_{diag}\) partiell berechenbar, es gäbe also ein Index \(e \in \mathbb{N}_0\) von \(\varphi\). Es folge \[e \in H_{diag}^c \Leftrightarrow \varphi(e) \downarrow \Leftrightarrow \Phi_e(e) \downarrow \Leftrightarrow e \in H_{diag} \Leftrightarrow e \not \in H_{diag}^c\] Die ist ein Wiederspruch.
@@ -135,14 +135,14 @@
 \mysubsection{Definition (m-Reduktion)} 
   Für eine Sprache \(A\) über einem Alphabet \(\Sigma\) und eine Sprache \(B\) über einem Alphabet \(\Gamma\) ist A genau dann \textbf{many-one-reduzierbar}, auch \textbf{m-reduzierbar}, auf \(B\), kurz \(A \leq_m B\), wenn es eine berechebare Funktion. \(f: \Sigma^* \to \Gamma^*\) gibt so dass \[w \in A \Leftrightarrow f(w)\in B\] \(\forall w \in \Sigma^*\) gilt. Gelten \(A \leq_m B\) und \(B \leq_{m} A\), so sind \(A\) und \(B\) \textbf{many-one-äquivalent} auch \textbf{m-äquivalent}, kurz \(A =_m B\).
 
-\mysubsection{Bemerkung(Entscheidbarkeit unter Reduzibilität)*} 
+\mysubsection{Bemerkung(Eigenschaften m-Reduktion)\(\diamondsuit\)} 
   \begin{itemize}
     \item [(i)] \(\leq_m\) ist transitiv.
     \item [(ii)] Gilt \(A \leq_m B\) für Sprachen \(A\) und \(B\) und ist \(B\) entscheidbar, so ist auch \(A\) entscheidbar.
     \item [(iii)] Alle entscheidbaren Sprachen L mit \(\varnothing \not = L \not = \mathbb{N}_0\) und m-äquivalent.
   \end{itemize}
 
-\mysubsection{Satz(Nicht-Entscheidbarkeit des initialen Halteproblems)*} 
+\mysubsection{Satz(Nicht-Entscheidbarkeit des initialen Halteproblems)\(\diamondsuit\)} 
   Das \textbf{initiale Halteproblem} \(H_{init} = {e \in \mathbb{N}_0 = \Phi_e(0) \downarrow}\) ist nicht entscheidbar.
 
   \paragraph{Idee: } 
@@ -158,7 +158,7 @@
 
   \paragraph{Dominosteinspiel!}
   \subparagraph{Gegeben: } 
-    Endlich viele typen von Spielsteinen mit jeweils zwei beschrifteten Feldern: "oberes Feld, unteres Feld". Beschritungen sind nichtleere Wörter über einem Alphabet. Spielsteine sind vom gleichen Typ, wenn die beiden oberen Felder gleich beschriftet sind und die beiden unteren Felder gleich beschriftet sind. Es gibt von jedem Typ beliebig viele steine. 
+    Endlich viele typen von Spielsteinen mit jeweils zwei beschrifteten Feldern: 'oberes Feld, unteres Feld'. Beschritungen sind nichtleere Wörter über einem Alphabet. Spielsteine sind vom gleichen Typ, wenn die beiden oberen Felder gleich beschriftet sind und die beiden unteren Felder gleich beschriftet sind. Es gibt von jedem Typ beliebig viele steine. 
 
   \subparagraph{Gesucht: }
     Können ein oder mehrere (aber endlich viele) Spielsteine so nebeneinander gelegt werden, dass sich oben und unten von links nach rechts gelesen das gleiche Wort ergibt?
@@ -256,27 +256,27 @@
       H_{init} \stackrel{(3)}{\leq_m} MPCP_{\Gamma} \stackrel{(2)}{\leq_m} PCP_{\Gamma} \stackrel{(1)}{\leq_m} PCP_{\Sigma}
     \]
 
-\mysubsection{Lemma(PCP-Reduktion: \(\Gamma \to \Sigma\))*} 
-    Für ein Alphabet \(\Sigma\) und \(\Gamma\) mit \(|\Sigma| \geq w\) gilt \(PCP_{\Gamma} \leq_m PCP_{\Sigma}\)
+\mysubsection{Lemma(PCP-Reduktion: \(\Gamma \to \Sigma\))\(\diamondsuit\)} 
+    Für ein Alphabet \(\Sigma\) und \(\Gamma\) mit \(|\Sigma| \geq 2\) gilt \(PCP_{\Gamma} \leq_m PCP_{\Sigma}\)
     \begin{proof}
       Wir suchen eine effektive Transformation, die jede Instanz \(I\) des Postschen Korrespondenzproblems über \(\Gamma\) in eine Instanz \(I'\) des postschen Korrespondenzproblems über \(\Sigma\) transformiert, so dass \(I\) genau dann lösbar ist, wenn \(I'\) lösbar ist. Seien \(a_1, a_2 \in \Sigma\) verschieden und sein \(b_1, \cdots, b_{|\Gamma|}\) die Elemente von \(\Gamma\). Es bezeichne \(\varphi : \Gamma^* \to \Gamma^*\) den eindeutigen Homomorphismus von Sprachen mit \(\varphi (b_i) = a^i_1 a_2\) \(\forall i \in [|\Gamma|]\). Gegeben eine solche Instanz \(I\) wie oben sei \(I' := \{(\varphi(u), \varphi(v)) : (u, v) \in I\}\). Die Funktion, die geeignete Codes von Instanzen \(I\) auf geeignete Codes von Instanzen \(I'\) abbildet ist berechenbar. Ist \((u_1, v_1), \cdots, (u_n, v_n)\) eine lösung \(I\), so gilt \[\varphi(u_1) \cdots \varphi(v_1) = \varphi(u_1, \cdots, \varphi(v_n)) = \varphi(v_1, \cdots, v_n) = \varphi(v_1) \cdots \varphi(v_n)\] und somit ist \((\varphi(u_1), \varphi(v_1), \cdots, (\varphi(u_n)), \varphi(v_n))\) eine Lösung von \(I'\). Die Instanz \(I'\) ist also lösbar wenn \(I\) lösbar ist. Ist \((u'_1, v'_1), \cdots, (u'_n, v'_n)\) eine Lösung von \(I'\), so gibt es eine Folge \((u_1, v_1)\cdots (u_n, v_n)\) von Paaren in \(I\) mit \(\varphi(u'_i)\) und \(\varphi(v_i) = v'_i\) \(\forall i \in [n]\), also mit \[\varphi(u_1, \cdots, u_n) = u'_1, \cdots, u'_n = u'_1, \cdots, u'_n =\varphi(u_1, \cdots, u_n)\] Da \(\varphi \vert_{\Sigma}\) injektiv und \(\varphi (\Sigma)\) präfixfrei ist, ist \(\varphi\) injektiv (siehe Übung), folglich gilt \(u_1, \cdots, u_n = v_1, \cdots, v_n\) und somit ist \((u_1, v_1), \cdots, (u_n, v_n)\) eine Lösung von \(I\). Die Instanz \(I\) ist also lösbar wenn \(I'\) Lösbar ist.
     \end{proof}
 
-  \mysubsection{Lemma(Reduktion von MPCP über \(\Sigma\) auf PCP über \(\Sigma\))*} 
-    Für Jedes alphabet \(\Sigma\) mit \(|\Sigma| \leq w\) gitl \(MPCP_{\Sigma} \leq_m PCP_{\Sigma}\).
+  \mysubsection{Lemma(Reduktion von MPCP über \(\Sigma\) auf PCP über \(\Sigma\))\(\diamondsuit\)} 
+    Für Jedes alphabet \(\Sigma\) mit \(|\Sigma| \leq 2\) gitl \(MPCP_{\Sigma} \leq_m PCP_{\Sigma}\).
     \begin{proof}
-      Sei \(\Sigma\) ein Alphabet mit \(|\Sigma| \geq 2\). Nach \hyperref[subsec:3.14]{Lemma 3.14}  genügt es ein Alphabet \(\Gamma\) zu finden, so das \(MPCP_{\Sigma} \leq_m PCP_{\Gamma}\) gilt. \\Wir suchen eine effektive Transformation , die jede instanz \((p, I)\) des modifizierten Postschen Korrespondenzproblems über \(\Sigma\) in eine Instanz \(I'\) des Postschen Korrespondenzproblems über einem geeignetem Alphabet\(\Gamma\) transformiert, so dass \((p, I)\) genau dann lösbar ist, wenn \(I'\) lösbar ist.
+      Sei \(\Sigma\) ein Alphabet mit \(|\Sigma| \geq 2\). Nach \hyperref[subsec:3.15]{Lemma 3.15}  genügt es ein Alphabet \(\Gamma\) zu finden, so das \(MPCP_{\Sigma} \leq_m PCP_{\Gamma}\) gilt. \\Wir suchen eine effektive Transformation , die jede instanz \((p, I)\) des modifizierten Postschen Korrespondenzproblems über \(\Sigma\) in eine Instanz \(I'\) des Postschen Korrespondenzproblems über einem geeignetem Alphabet\(\Gamma\) transformiert, so dass \((p, I)\) genau dann lösbar ist, wenn \(I'\) lösbar ist.
     \end{proof}
-    \paragraph{Idee: }
-    \[
-    HIER ABB EINFÜGEN  
-    \]
 
-    \paragraph{\(* \in \Sigma\)}
+    \begin{center}  
+      \includegraphics[scale=0.4]{Berechenbarkeit/Tetris.png}
+    \end{center}
+    
+    Betrachte die Homomorphismus von Sprachen \(\delta_{\rightarrow}\), \(\delta_{\leftarrow} : \Sigma^* \rightarrow (\Sigma \cup {*})^*\) mit \(\delta_{a} = a*\) und \(\delta_{\leftarrow}(a) = *a\) \(\forall a \in \Sigma\). Für jede Instanz \((p, I) = ((u_1, v_1), I)\) wie oben sei 
     \[
-    HIER ABB EINFÜGEN  
+      I' = \{(\delta_{\leftarrow}(u_1), *\delta_{\rightarrow}(v_1))\} \cup \{\delta_{\leftarrow}(u), \delta_{\rightarrow}(v):  (u, v) \in I\} \cup \{\delta_{\leftarrow}(u)*, \delta_{\rightarrow}(v): (u, v) \in I\}
     \]
-    Betrachte die Homomorphismus von Sprachen \(\delta_{\rightarrow}\), \(\delta_{\leftarrow} : \Sigma^* \rightarrow (\Sigma \cup {*})^*\) mit \(\delta_{a} = a*\) und \(\delta_{\leftarrow}(a) = *a\) \(\forall a \in \Sigma\). Für jede Instanz \((p, I) = ((u_1, v_1), I)\) wie oben sei \[I' = \{(\delta_{\leftarrow}(u_1), *\delta_{\rightarrow}(v_1))\} \cup \{\delta_{leftarrow}(u), \delta_{rightarrow}(v):  (u, v) \in I\} \cup \{\delta_{\leftarrow}(u)*, \delta_{\rightarrow}(v): (u, v) \in I\}\] Die Funktion die geeignete Codes von Instanzen \((p, I)\) auf geeignete Codes der zugehörigen Instanzen \(I'\) abbildet ist berechenbar. Gibt es eine Lösung \((u_1, v_1), \cdots, (u_n, u_n)\) von \((p,I)\) dann ist 
+      Die Funktion die geeignete Codes von Instanzen \((p, I)\) auf geeignete Codes der zugehörigen Instanzen \(I'\) abbildet ist berechenbar. Gibt es eine Lösung \((u_1, v_1), \cdots, (u_n, u_n)\) von \((p,I)\) dann ist 
     \[
       \delta_{\leftarrow}(u_1)\cdots \delta_{\leftarrow}(u_n)* = \delta_{\leftarrow} (u_1 \cdots u_n)*
     \]
@@ -295,7 +295,7 @@
     \]
     eine Lösung von \(I'\). Es bleibt zu zeigen das \((p, I)\) lösbar ist, wenn \(I'\) lösbar ist. Sei \(\tau : (\Sigma \cup \{*\})^* \rightarrow \Sigma^*\) der Homomorphismus von Sprachen mit \(\tau \vert_{\Sigma} = id_{\Sigma}\) und \(\tau(*) = \lambda\). Für \((u', v') \in I'\) gilt \((\tau (u'), \tau(v')) \in I\). Sei \((u'_1, v'_1), \cdots, (u'_n, v'_n)\) eine Lösung von \(I'\) und \((u'_i, v'_i) = (\tau(u'_i), \tau(v'_i))\) für \(i \in [n]\). Es gilt \[\tau(u'_1) \cdots \tau(u'_n) = \tau(u'_1 \cdots u'_n) = \tau(v'_1 \cdots v'_n) = \tau(v'_1) \cdots \tau(v'_n)\] und somit ist \((u_1, v_1), \cdots, (u_n, u_v)\) eine Lösung von \(I\) als Instanz des Postschen Korrespondenzproblems über \(\Sigma\). Es genügt aber zu zeigen, dass \((u_1, v_1) = p \) gilt. Sei \(p' = (\delta_{\leftarrow} (u_1), \not \tau (?wirklich nicht tau?) \delta_{\rightarrow}(v_1))\). Für \((u', v') \in I' / \{p'\}\) gilt \(u'(1) \not = v'(1)\), da \((u'_1, v'_1), \cdots, (u'_n, v'_n)\) eine Lösung von \(I'\) ist gilt also \((u'_1, v'_1) = p'\) und damit \((u_1, v_1) = (\tau(u'_1), \tau(v'_1)) = p\).
 
-  \mysubsection{Lemma(Reduktion von \(H_{init}\) auf \(MPCP_{\Box, 0, 1, *, 6, +}\))*}
+  \mysubsection{Lemma(Reduktion von \(H_{init}\) auf \(MPCP_{\Box, 0, 1, *, 6, +}\))\(\diamondsuit\)}
     Für jedes Alphabet \(\Sigma\) mit \(|\Sigma| \geq 2\) gilt \(H_{init} \leq_m MPCP_{\Box, 0, 1, *, 6, +}\)
 
     \begin{proof}
@@ -307,7 +307,7 @@
       \[
         p_e = (0, 0 \# * \ *\Box\#)
       \]
-      (die 0en sind nur dafür da da, damit "im?" komplment nicht leer ist.) Wir beschreiben nun die Konstruktion von \(I_e\). Für jede Instruktion \((q, a, q', a', L) \in \Delta\) fügen wir folgende Paare ein 
+      (die 0en sind nur dafür da da, damit 'im?' komplment nicht leer ist.) Wir beschreiben nun die Konstruktion von \(I_e\). Für jede Instruktion \((q, a, q', a', L) \in \Delta\) fügen wir folgende Paare ein 
       \[
         (\# \hat{q}a, \# \hat{q}'\Box a'), (\Box \hat{q} a, \hat{q}'\Box a'), (0\hat{q}a, \hat{q}'0a')(1\hat{q}a, \hat{q}'1a')
       \]
@@ -328,10 +328,11 @@
       Dies beschreibt die Konstruktion von \((p_e, I_e)\). Wir verzichten auf die einfache aber aufwändige Verfifikation, dass \(\mathcal{M}_e\) genau dann bei Eingabe \(\lambda\) terminiert, wenn \((p_e, I_e)\) lösbar ist.
     \end{proof}
 
-  \mysubsection{Beispiel(TM \(M_e\) mit \(e \in \mathbb{N}_0\)))*} 
-    Sei \(e \in \mathbb{N}_0\) mit \(\mathcal{M}_e = (\{0, 1\}, \{0, 1\}, \{\Box, 0, 1\}, \Delta, 0, \{0\})\), wobei \(\Delta = \{(0, \Box, 1, 1, R), (1, \Box, 1, 1, L)\}\). Mitder Notation aus dem Beweis aus \hyperref[subsec:3.16]{Lemma 3.17} gilt dann [hier bild einfügen!]
+    \begin{center}  
+      \includegraphics[scale=0.6]{Berechenbarkeit/beispiel.png}
+    \end{center}
 
-  \mysubsection{Satz(Unentscheidbarkeit des Post'schen Korrespondenzproblems)*} 
+    \mysubsection{Satz(Unentscheidbarkeit des Post'schen Korrespondenzproblems)*} 
     Für jedes Alphabet \(\Sigma\) mit \(|\Sigma| \geq 2\) ist \(PCP_{\Sigma}\) nicht entscheidbar. 
     \begin{proof}
       Mit \hyperref[subsec:3.16]{Lemma 3.16}, \hyperref[subsec:3.17]{Lemma 3.17} und \hyperref[subsec:3.18]{Lemma 3.18} folgt 
@@ -356,7 +357,7 @@
       \Phi_{f(0)}, \Phi_{f(1)}, \Phi_{f(2)}
     \]
 
-  \mysubsubsection{Definition (Fixpunktsatz)} 
+  \mysubsubsection{Definition (Fixpunkt)} 
     Ein \textbf{Fixpunkt} eine berechenbaren Funktion \(f: \mathbb{N}_0 \to \mathbb{N}_0\) ist ein \(e \in \mathbb{N}_0\) mit \(\Phi_{f(e)} = \Phi_e\).
 
   \mysubsubsection{Satz (Fixpunktsatz, Hartley Rogers jr., 1967)} 
@@ -375,7 +376,7 @@
         \Phi_{f(e_{fix})} = \Phi_{f(\eta(e_{f \circ h}))} = \Phi_{\Phi{e_{f\circ h}} (e_{f\circ h})} \overset{(*)}{=} \Phi_{\eta(e_{f \circ h})} = \Phi_{e_\eta}
       \] Folglich ist \(e_{fix}\) ein Fixpunkt von \(f\). 
     \end{proof}
-    Solche Fixpnkte wie oben sind "semandische" Fixpunkte und kein "syntaktischen" Fixpunkte. Aus dem Fixpunktsatz kann man leicht das Rekursionstheorem folgen, dsa es anschaulich erlaubt während der Konstruktion einer partiell berechebaren Funktion anzunehmen den Index der fertig definierten Funktion zu kennen. Auf Programmebene bedeutet das, das es möglich ist ein Programm so zu schreiben ,dass der fertige Quellcode im Programm zur Verfügung stelt (ohne diesen irgendwo, zum Beispiel vom Speicher des Quellcodes, einzulesen)
+    Solche Fixpnkte wie oben sind 'semandische' Fixpunkte und kein 'syntaktischen' Fixpunkte. Aus dem Fixpunktsatz kann man leicht das Rekursionstheorem folgen, dsa es anschaulich erlaubt während der Konstruktion einer partiell berechebaren Funktion anzunehmen den Index der fertig definierten Funktion zu kennen. Auf Programmebene bedeutet das, das es möglich ist ein Programm so zu schreiben ,dass der fertige Quellcode im Programm zur Verfügung stelt (ohne diesen irgendwo, zum Beispiel vom Speicher des Quellcodes, einzulesen)
 
   \mysubsubsection{Satz (Rekursionstheorem, Stephen Cole Kleen, 1938)} 
     Für alle partielle Funktionen \(\varphi : \mathbb{N}_0^2 \leadsto \mathbb{N}_0\) gibt es ein \(e \in \mathbb{N}_0\) mit \(\Phi_e(x) = \varphi(e, x) \quad \forall x \in \mathbb{N}_0\) 
@@ -393,7 +394,7 @@
     \end{proof}
 
   \mysubsubsection{Definition (Indexmenge)} 
-    Eine Teilmenge \(I \subseteq \mathbb{N}_0\) heißt Indexmenge, wenn \(e \in I \Leftrightarrow e' \in I \quad \forall e, e' \in \mathbb{N}_0\) mit \(\Phi_e = \Phi_e'\) gilt.
+    Eine Teilmenge \(I \subseteq \mathbb{N}_0\) heißt Indexmenge, wenn \(e \in I \Leftrightarrow e' \in I \quad \forall e, e' \in \mathbb{N}_0\) mit \(\Phi_e = \Phi_{e'}\) gilt.
 
   \mysubsubsection{Satz (Satz von Rice, Henry Horden Rice, 1951)}
     Ist \(I\) ein Indexmenge \(\varnothing \not = I \not = \mathbb{N}_0\), so ist \(I\) nicht entscheidbar.

@@ -43,17 +43,17 @@
     \medskip
     \(\leadsto\) Konstanten spielen nur eine untergeordnete Rolle für uns.
 
-\mysubsection{Definition(Landau-Symbole)*}
+\mysubsection{Definition(Landau-Symbole)\(\diamondsuit\)}
     Für eine Funktion \(f: \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) sei
     \begin{itemize}
         \item [] \(o(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \forall \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq \epsilon f(n)\}\)
         \item [] \(O(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \exists c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
         \item [] \(\theta(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \exists c, \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n > n_0 : \epsilon f(n) \leq g(n) \leq cf(n)\}\)
         \item [] \(\Omega (f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \exists \epsilon > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \geq \epsilon f(n)\}\)
-        \item [] \(w(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \forall c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \leq c f(n)\}\)
+        \item [] \(w(f) = \{g: \mathbb{N}_0 \to \mathbb{R}_{\geq 0} : \forall c > 0 : \exists n_0 \in \mathbb{N}_0 : \forall n \geq n_0 : g(n) \geq c f(n)\}\)
     \end{itemize}
 
-\mysubsection{Bemerkung(Eigenschaften Landau-Symbole)*}
+\mysubsection{Bemerkung(Eigenschaften Landau-Symbole)\(\diamondsuit\)}
     Seien \(f, g : \mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) Funktion dann gilt:
     \begin{itemize}
         \item [(i)] \(g \in o(f) \Leftrightarrow f \in w(g)\)
@@ -61,7 +61,7 @@
         \item [(iii)] \(g \in \theta(f) \Leftrightarrow ( g \in O(f) \text{ und }g \in \Omega(f))\)
     \end{itemize}
 
-\mysubsection{Bemerkung(Eigenschaften Landau-Symbole)*}
+\mysubsection{Bemerkung(Eigenschaften Landau-Symbole)\(\diamondsuit\)}
     Seien \(f, g : \mathbb{N}_0 \to \mathbb{R}_+\) Funktion dann gilt: 
     \begin{itemize}
         \item [(i)] \(g \in o(f) \Leftrightarrow \underset{n \to \infty}{\lim} \frac{g(n)}{f(n)} = 0\)
@@ -73,13 +73,13 @@
     \medskip
     Unsere Konstruktion für lineare Beschleunigungbedurfte mehrere Bänder. Tatsächlich kann es einen Unterschied machen ob ein oder mehrere Bänder zur Verfügung stehen. Als Beispiel betrachten wir Binärpalindrome:\\ Für \(w \in \{0, 1\}^*\). Sei \(w^R = w(|w| \cdots w(1))\). Die Sprache der Binärpalindrome ist folglich \(\{w \in \{0, 1\}^* : w = w^R \}\).
 
-\mysubsection{Proposition(Binärpalindrome erkennen)*}
+\mysubsection{Proposition(Binärpalindrome erkennen)\(\diamondsuit\)}
     Es gibt eine \(t(n)\)- zeitbeschränkte DTM M mit \(L(M) = \{w \in \{0, 1\}^* : w = w^R\}\) und \(t(n) = O(n)\).
     \begin{proof}
         Eine 2-DTM M die die Eingabe von links nach rechts durchläuft und dabei die Eingabe auf das 2.Band kopiert, dann auf dem ersten Band den Kopf zurück auf die Ausgangsposition bringt, dann gleichzeitig die Eingabe vpn links nach rehcts und die Kopie symbolweise vergeicht und genau dann akzeptiert, wenn alle Vergleiche positiv waren, dann erkennt M die Binärpalindrome.
     \end{proof}
 
-\mysubsection{Satz (Zeitbeschränkung einer Turingmaschine)*}
+\mysubsection{Satz (Zeitbeschränkung einer Turingmaschine)\(\diamondsuit\)}
     Ist M eine \(t(n)\)-zeitbeschränkte 1-DTM mit \(L(M) = \{w \in \{0, 1\}^* : w = w^R\}\), so ist \(t(n) = \Omega (n^2)\)
     \begin{proof}
         Sei M eine \(t(n)\)-zeitbeschränkter 1-DTM mit Eingabealphabet \{0, 1\}, \(L := \{ww^R : w \in \{0, 1\}^*\} \subseteq L(M)\) und \(t(n) \not = \Omega (n^2)\). Wir zeigen \(L \not = L(M)\). Aus der Existenz von M folgt die Existenz einer \((2t(n) + 1)\)-zeitbeschränkte TM M' mit Zustandsmenge Q wobei \(|Q \leq 2|\), Eingabealphabet \{0, 1\} und L(M) = L(M'), so dass der Kopd von M' am Ende jeder Rechnung auf dem Feld steht auf dem er am Anfang stand. Wir betrachten die Felder auf dem Band von M' als beginnend mit dem Feld auf dem der Kopf zu Rechungsbeginn steht mit dem natürlichen Zahlen 1, 2, 3, ...\\ Für jede Rechung R von M' sie \(C_i (R)\) die Folge \(q_1, \cdots, q_l\) von Zuständen von M', so dass M' während der Rechung R insgesamt l und die Grenze zwischen i und i+1 überschritt und so dass \(q_j\) für \(j \in [l]\) der Zustand ist, in dem sich M' unmittelbar vor dem Auführen der Anweisungen befindet, die das j-te übertreten auslöst. Die Folgen \(C_i(R)\) werden Crossing-Sequenz von M' gennant.\\ Die wesentliche Eigenschaft dieser Crossing-Sequenzen, die wir benutzen, ist wie folgt:\\ Ist R eine akzeptierte Rechung von M' zur Eingabe u und S eine Rechung zur Eingabe v und sind \(i \in [|u|]\) und \(j \in [|v|]\) mit \(C_i(R) = C_j(S)\), so gilt 
@@ -103,10 +103,10 @@
         Im Sinne von \hyperref[subsec:7.9]{Satz 7.9} macht es zwar einen Unterschied ob TM mit einem oder mit mehreren Bändern betrachtet werden, der Anstieg der Laufzeit ist bei Simulation mehrerer Bänder auf einem band mittels Spurentechnik aber nur quadratisch.
     \end{proof}
 
-\mysubsection{Satz(Reduktion auf 1-Band-TM)*}
+\mysubsection{Satz(Reduktion auf 1-Band-TM)\(\diamondsuit\)}
     Ist M eine \(t(n)\)- zeitbeschränkte TM, so gibt es eine \(t'(n)\)- zeitbeschränkte 1-TM mit \(t'(n) = O((t(n))^2)\), die dieselbe Sprache erkennt. Während der laufzeitanstieg bei der Reduktion auf ein Band quadratisch sein kann, ist die Reduktion von k auf zwei Bänder effizienter möglich 
 
-\mysubsection{Satz(Codekonstruktion und Simulation)*}
+\mysubsection{Satz(Codekonstruktion, Simulation, zeitschranke)\(\diamondsuit\)}
     Ist für alle deterministischen TM \(M = (\{0, \cdots, n\}, \{0, 1\}, \{0, 1, \Box\}, \Delta, 0, \{0\})\) und für alle Wörter \(w \in \{0, 1\}^*\) das Wort code (M, w) ein geeigneter Codefür (M, w), so gibt es eine 2-DTM U, so dass folgendes gilt:
 
     \begin{itemize}
@@ -154,7 +154,7 @@
             \end{itemize}
     \end{proof}
 \newpage
-\mysubsection{Satz (Universelle TM-Simulation mit Zeitbeschränkung)*}
+\mysubsection{Satz (Universelle TM-Simulation mit Zeitbeschränkung)\(\diamondsuit\)}
     Ist für alle TM \(M = (\{0, \cdots, n\}, \{0, 1\}, \{\Box, 0, 1\}, \Delta, 0, \{0\})\) und alle Wörter \(w \in \{0, 1\}^*\) das wort \(code(M, w)\) ein geeigneter Code für (M, w), so gibt es eine 2-TM U, so dass folgendes gilt.
     \begin{itemize}
         \item [(i)] \(\forall\) TM M wie oben und \(\forall w \in \{0, 1\}^*\) akzeptiert U den Code \(code(M, w)\) genau dann, wenn M das Wort w akzeptiert.
@@ -172,7 +172,7 @@
         \end{itemize} 
         Nach Konstruktion sieht man leicht, dass es ein \(c, n_0 \in \mathbb{N}\) gibt, so dass U höchstens \(ct(|w|)\) Schritte benötigt falls \(|w| \geq n_0\).
     \end{proof}
-\mysubsection{Definition (Zeitbeschränkte Funktionen und Sprachen)*}
+\mysubsection{Definition (Zeitbeschränkte Funktionen und Sprachen)\(\diamondsuit\)}
     Für eine Menge T von Funktionen von \(\mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) definieren wir
     \begin{itemize}
         \item \textbf{DTIME}(T) := \(\{L(M) \subseteq \{0, 1\}^* : \exists t \in T\) ist M eine t-zeitbeschränkte DTM\}
@@ -183,7 +183,7 @@
 \mysubsection{Definition (Zeitkonsturierbar)}
     Eine Zeitschranke t ist genau dann \textbf{Zeitkonsturierbar}, wenn es eine DTM M mit Eingabealphabet \{1\} gibt, so dass \(time_M(1^n) = t(n)\) gibt.
 
-\mysubsection{Bemerkung (Polynomielle Zeitkonstruierbarkeit)*}
+\mysubsection{Bemerkung (Polynomielle Zeitkonstruierbarkeit)\(\diamondsuit\)}
     \begin{itemize}
         \item [(i)] Ist p ein Polynom in einer variable über \(\mathbb{Z}\) mit \(p(n) \geq n+1 \quad \forall n \in \mathbb{N}_0\), so ist \(t: \mathbb{N}_0 \to \mathbb{N}_0\), \(n \mapsto p(n)\) Zeitkonstruierbar.
         \item [(ii)] Ist t Zeitkonsturierbar, so ist auch \(T: \mathbb{N}_0 \to \mathbb{N}_0\), \(n \mapsto 2^{t(n)}\) Zeitkonsturierbar.
@@ -195,7 +195,7 @@
         Sei \(M_0, M_1, \cdots\) eine geeignete effektive Aufzählung deterministische TM der Form \((\{0, \cdots, n\}, \{0,1\}, \{\Box, 0, 1\}, \Delta, 0, \{0\})\), so dass \(\forall\) DTM M dieser Form es unendlich viele \(e \in \mathbb{N}_0\) mit \(M = M_e\) gibt.\\Wir betrachen eine DTM U, die bei Eingabe \(1^e\) die DTM \(M_e\) bei eingabe \(1^e\) simuliert und genau dann akzeptiert, wenn die Simulation terminiert und nicht akzeptiert. \\ Nach \hyperref[subsec:7.11]{Satz 7.11} können wir U so wählen, dass es \(\forall c \geq 1\) und alle \(ct(n) \log t(n)\) - zeitbeschränkter DTM M der obigen Form ein \(e_{c_1 M}\) mit \(M = M_{e_{c_1}M}\), so dass die Rechnung von U zur Eingabe \(1^e_{c_1 M}\) höchstens Lämge \(T(e_M, c)\) hat.\\Da T zeitbeschränktist, ist es möglich U so zu modifizieren, dass U die Simulation immer nach \(T(e)\) Schritten abbricht, wobei wir bei Abbruch nie akzeptieren.\\Dann ist U offenbar \(T(n)\) - zeitbeschränkt, es gilt also \(L(U) \in \textbf{DTIME}(T(n))\). \\Wir zeigen nun, dass keine \(t(n)\) - zeitbeschränkte DTM M existiert mit \(L(M) = L(U)\)\\Ist M eine \(t(n)\) - zeitbeschränkte DTM, so existiert nach \hyperref[subsec:7.4]{Satz 7.4} ein \(c \geq 1\) und eine \(ct(n)\) - zeitbeschränkte DTM M' der obigen Form mit \(L(M) = L(M')\).\\Die TM U bricht dann die Simulation der Eingabe \(1^{e_{c_1 M'}}\) nicht ab, es gilt also \(L(M_{e_{c_1 M'}}) \not = L(U)\) und damit wegen \(L(M_{e_{c_1 M'}}) = L(M') = L(M)\) also \(L(U) \not = L(M)\).
     \end{proof}
 
-\mysubsection{Proposition(Zeitbeschränkte TM-Äquivalenz)*}
+\mysubsection{Proposition(Zeitbeschränkte TM-Äquivalenz)\(\diamondsuit\)}
     Für alle \(t:\mathbb{N}_0 \to \mathbb{R}_{\geq 0}\) und t - zeitbeschränkte TM M ibt es eine DTM M' mit \(L(M) = L(M')\), sodass M' \(2^{O(t)}\) - zeitbeschränkt ist.
     \begin{proof}
         \(\forall\) M wie oben gibt es \(c \in \mathbb{N}_0\) sodass es bei Eingabe w höchstens \(c^{t(|w|)}\) viele rechnungen zur Eingabe w gibt. \\
@@ -241,7 +241,7 @@
         \item [(ii)] Die Relation \(\{(e, x, t) \in \mathbb{N}_0 \times \{0, 1\}^* \times \mathbb{N}_0 : \phi(e,x) = t\}\) ist im Sinne entscheidbar, dass die Funktion \(\psi : \mathbb{N}_0 \times \{0, 1\}^* \times \mathbb{N}_0 \to \{0, 1\}\) mit \(\psi(e, x, t) = 1 \Leftrightarrow \phi (e,x) = t \quad \forall e, x, t\) berechenbar ist.
     \end{itemize}
 
-\mysubsection{Definition(T-Beschränkte TM und DCOM)*}
+\mysubsection{Definition(T-Beschränkte TM und DCOM)\(\diamondsuit\)}
     Sei \(t: \mathbb{N}_0 \to \mathbb{N}_0\) eine Funktion für \(e \in \mathbb{N}_0\) wird die TM \(M_e\) als \textbf{t - \(\phi\) - beschränkt} bezeichnet, wenn \(M_e\) total ist und es ein \(n_0 \in \mathbb{N}_0\) gibt, sodass \(\phi(e, x) \leq t(|x|) \quad \forall x \in \{0, 1\}^{\geq n_0}\) gilt. Wir setzen:
     \[
         \textbf{DCOM}^{\phi}(t) := \{L(M) \subseteq \{0, 1\}^* : M ist t - \phi - beschränkt\}  

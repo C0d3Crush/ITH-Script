@@ -1,0 +1,141 @@
+\section*{1}
+\subsection*{1.1}
+    Wofür steht die Notation \([n]\)
+    \vspace*{0.5cm}
+    \\
+    A: Es gibt \(n \in \mathbb{N}_0\) mit \([n] = \{1, \cdots, n\}\) und \([n]_0 = \{0, 1, \cdots, n\}\) 
+\subsection*{1.2}
+    Bestimme die Mengen.
+    \begin{itemize}
+        \item [a)]\([3]_0 = \{0, 1, 2, 3\}\)
+        \item [b)]\([0]_0 = \{0\}\)
+        \item [c)]\([0] = \varnothing\)
+    \end{itemize}
+
+\section*{2}
+\subsection*{2.1}
+Wofür steht die Notation \(A^n\) mit einer Menge A?
+\vspace*{0.5cm}
+\\
+A: Für eine Menge A und \(n \in \mathbb{N}\) ist \(A^n = \{(a_1, \cdots, a_n) : a_1, \cdots, a_n \in A\}\)
+\subsection*{2.2}
+\subsubsection*{2.2.1}
+    \begin{enumerate}
+        \item [] \(A = \{1, 2\}\)
+        \item [] \(A^2 = \{(1,2), (2,1), (2,2),(1,1)\}\)
+    \end{enumerate}
+
+\subsubsection*{2.2.2}
+    \begin{enumerate}
+        \item [] \(M = \{"a", "bc", "d"\}\)
+        \item [] \(M = \{(a, a, a), \cdots\}\)
+    \end{enumerate}
+    \(\rightarrow\) Möglichkeiten von \(M^3 : 3^3 = 27\)
+
+\section*{3.}
+Welche Mächtigkeit hat \(A^3\) mit \(A = [4]_0\)? 
+\vspace*{0.5cm}
+\\
+\(A : |A|^3 = 5^3 = 125\)
+
+\section*{4.}
+Was ist eine n-äre partielle Funktion?
+\vspace*{0.5cm}
+\\
+Für \(n \in \mathbb{N}\) ist \(\varphi\) eine n-äre partielle Funktion \(\varphi : A^n \leadsto B\)
+mit 
+\begin{itemize}
+    \item \(dom(\varphi) \subseteq A^n\) \\Die Definitionsmenge ist teilmenge der n tupel aus A.
+    \item \(im(\varphi) \subseteq B\) \\Der Wertebereich ist aus B.
+\end{itemize}
+\textit{ Der Pfeil \(\leadsto\) weist darauf hin, dass es sich um eine partielle Funktion handelt.}
+
+\section*{5.}
+Ist \(\log : (0, \infty) \to \mathbb{R}\) partiell berechenbar?
+\vspace*{0.5cm}
+\\
+Obwohl der log auf \((0, \infty)\) nicht definiert ist, können wir schreiben das die funktion
+\(\log : \mathbb{R} \leadsto \mathbb{R}\)
+\begin{itemize}
+    \item mit dem Wertebereich \(dom(\log) = (0,\infty) \subseteq \mathbb{R}\)
+    \item und dem Bild \(im(\log) = \mathbb{R}\)
+\end{itemize}
+partiell berechenbar ist.
+
+\section*{6.}
+Was bedeuted Notation \(\varphi(x_1, \cdots, x_n)\uparrow\) bzw \(\downarrow\)
+\vspace*{0.5cm}
+\\
+Für \(a_1, \cdots, a_n \in A\)
+\begin{itemize}
+    \item  bedeuted \(\varphi(a_1, \cdots, a_n) \downarrow\)\\ 
+    dass \((a_1, \cdots, a_n) \subseteq dom(\varphi)\) gilt
+    \item  und \(\varphi(a_1, \cdots, a_n \uparrow)\) bedeuted,\\
+    dass \(a_1, \cdots, a_n \not \subseteq dom(\varphi)\)
+\end{itemize}
+\textit{Statt \(\varphi (a_1, \cdots, a_n) \uparrow\) schreiben wir auch \(\varphi(a_1, \cdots, a_n) = \uparrow\)}
+\subsection*{7.}
+    Gilt \(\uparrow\) oder \(\downarrow\)?
+    \begin{itemize}
+        \item \(\log(-5) \uparrow\)
+        \item \(\log(7 \downarrow)\)
+        \item \(f(x) = \frac{1}{x}\) und \(f: \mathbb{R} \leadsto \mathbb{R}\) so dass \(f(0) \uparrow\), aber \(f (x) \downarrow \) für alle \(x \in \mathbb{R} / \{0\}\)
+    \end{itemize}
+    \paragraph*{Anmerkung}
+        Man kann auch \(\uparrow\) in Definitionen verwenden so dass \(g : \mathbb{Z}\leadsto \mathbb{Z}\)
+        \[g(x) = 
+        \begin{cases}
+            1 &, \text{wenn x gerade}  \\
+            \uparrow & \, \text{sonst}
+        \end{cases}
+        \]
+    \subsection*{8.}
+        Was ist \(dom(g)\) ?
+        \vspace*{0.5cm}
+        \\
+        A: Die Menge der geraden ganzen Zahlen.
+
+\subsection*{9.1}
+    Was ist eine totale Funktion
+    \vspace*{0.5cm}
+    \\
+    Die partielle Funktion \(\varphi\) ist \textbf{total}, wenn \(dom(\varphi) = A^n\) gilt.
+\subsection*{9.2}
+    \begin{itemize}
+        \item [a)]\(exp : \mathbb{R} \to \mathbb{R}\) ist total.
+        \item [b)]\(\log : \mathbb{R} \leadsto \mathbb{R}\) ist \textbf{nicht} total, da \(dom (\log) = (0,\infty) \not \subseteq \mathbb{R}\)
+        \item [c)]\(\log : (0, \infty) \leadsto \mathbb{R}\) ist aber total. 
+    \end{itemize}
+    Totalität ist eine Eigenschaft die 'relativ' zum Definitionsbereich zu sehen ist.
+\section*{10.}
+    Was muss man verändern, um eine beliebige partielle Funktion \(\varphi: A^n \mapsto B\) zu einer totalen Funktion umzuschreiben?
+    \vspace*{0.5cm}
+    \\
+    A: Man setze \(\hat{\varphi} : dom(\varphi) \to B\) mit \(\hat{ \varphi} (x) = \varphi(x)\) für alle \(x \in dom(\varphi)\) 
+    
+\section*{11} 
+    \subsection*{11.1}
+        Was ist eine Lineare (totale) Ordnung, auf einer Menge A?  
+        \vspace*{0.5cm}
+        \\
+        \[\leq \subseteq A^2\]
+        \begin{itemize}
+            \item \(\leq\) ist der name der Teilmenge mit einem etwas komischen namen.
+            \item \(\subseteq A^2\) deutet darauf hin das die Teilmenge aus Zweier-Tupeln besteht.
+        \end{itemize}
+        So dass folgende Eigenschaften erfüllt sind:
+        \begin{enumerate}
+            \item Reflexivität
+            \item Antisymetrie
+            \item Transitivität
+            \item Totalität
+        \end{enumerate}
+
+    \subsection*{11.2}
+        Was ist die Absicht hinter der Definition der linearen Ordnung?
+        \vspace*{0.5cm}
+        \\
+        A: Eine Lineare Ordnung ist eine erweiterung der Begriffe on 'größer' und 'kleiner' wie man ie z.b. \(\mathbb{N}\) kennt. Das ziel ist es diese Begriffe in sinnvoller weise auf eine beliebige Menge zu erweitern.
+    
+    \subsection*{11.3}
+        

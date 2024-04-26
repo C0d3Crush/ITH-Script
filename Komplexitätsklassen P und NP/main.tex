@@ -32,21 +32,21 @@
         Finden eines NP-vollständigen Problems.
 
 \mysubsection{Definition (aussagenlogische Formel)}
-    Sei Var eine abzählbare Menge mit \(\lnot, \wedge \not \in Var\). Die Menge der \textbf{aussagenlogischen Formeln} A ist die ??? Inklusion kleinster Menge von Wörtern über \(Var \cup \{\lnot, \wedge, (,)\}\) mit \(a \in A \quad \forall a \in Var\) und \(\lnot \varphi, (\varphi \wedge \psi) \in A \quad \varphi, \psi \in A\). Für \(\varphi, \psi, \in A\) schreiben wir statt \(\lnot(\lnot \varphi \wedge \lnot \psi)\) auch \((\varphi \vee \psi)\) und statt (\(\lnot \varphi \vee \psi\)) auch (\(\varphi \to \psi\)). Wie üblich vereibaren wir Klammerregeln zur besseren lesbarkeit: \\ \(\lnot\) bidet stärker als \(\wedge\) und \(\vee\). 
+    Sei Var eine abzählbare Menge mit \(\lnot, \wedge \not \in Var\). Die Menge der \textbf{aussagenlogischen Formeln} A ist die l. Inklusion kleinster Menge von Wörtern über \(Var \cup \{\lnot, \wedge, (,)\}\) mit \(a \in A \quad \forall a \in Var\) und \(\lnot \varphi, (\varphi \wedge \psi) \in A \quad \varphi, \psi \in A\). Für \(\varphi, \psi, \in A\) schreiben wir statt \(\lnot(\lnot \varphi \wedge \lnot \psi)\) auch \((\varphi \vee \psi)\) und statt (\(\lnot \varphi \vee \psi\)) auch (\(\varphi \to \psi\)). Wie üblich vereibaren wir Klammerregeln zur besseren lesbarkeit: \\ \(\lnot\) bidet stärker als \(\wedge\) und \(\vee\). 
     \paragraph*{Beispielsweise}
         \(\lnot a \wedge b \wedge c = ((\lnot a \wedge b)\wedge c)\)
     
-\mysubsection{Definition(Grundbegriffe der aussagenlogischen Formeln)*}
+\mysubsection{Definition(Grundbegriffe der Aussagenlogik)\(\diamondsuit\)}
     \begin{itemize}
         \item [(i)]DieElemente von Var heißen \textbf{Variablen}.
-        \item [(ii)] Für \(\varphi, \varphi_1, \cdots, \varphi_n \in A\) mit \(n \in \mathbb{N}\) heißt die aussagen ??? Formel \( \lnot \varphi\) \textbf{Negation} von \(\varphi\), die aussagen ??? Formel \(\varphi_1 \wedge \cdots \wedge \varphi_n\) heißt \textbf{Konjunktion} von \(\varphi_1, \cdots, \varphi_n\) und \(\varphi_1 \vee \cdots \vee \varphi_n\) heißt \textbf{Disjunktion} von \(\varphi_1, \cdots, \varphi_n\).
+        \item [(ii)] Für \(\varphi, \varphi_1, \cdots, \varphi_n \in A\) mit \(n \in \mathbb{N}\) heißt die aussagen l. Formel \( \lnot \varphi\) \textbf{Negation} von \(\varphi\), die aussagen l. Formel \(\varphi_1 \wedge \cdots \wedge \varphi_n\) heißt \textbf{Konjunktion} von \(\varphi_1, \cdots, \varphi_n\) und \(\varphi_1 \vee \cdots \vee \varphi_n\) heißt \textbf{Disjunktion} von \(\varphi_1, \cdots, \varphi_n\).
     \end{itemize}
 
 \mysubsection{Definition (konjunktive Normalform)}
 \begin{itemize}
     \item [(i)] Ein \textbf{Literal} ist eine variable oder eine negaltion einer Variablen.
     \item [(ii)] Eine \textbf{disjunktive Klausel} ist eine Disjunktion von Literalen.
-    \item [(iii)] Eine aussagen??? Formel in \textbf{konjunktiver Normalform}, kurz KNF ist eine Konjunktion disjunkiver klauseln
+    \item [(iii)] Eine aussagen l. Formel in \textbf{konjunktiver Normalform}, kurz KNF ist eine Konjunktion disjunkiver klauseln
 \end{itemize}
 
 \mysubsection{Definition (Wahrheitswert)}
@@ -233,7 +233,7 @@
 
     \[SKIZZE HIER\]
 
-\mysubsection{Definition (Graphen (V, E))*}
+\mysubsection{Definition (Graphen (V, E))\(\diamondsuit\)}
     Ein \textbf{Graph} ist ein Paar (V,E), wobei V eine endliche Menge ist, die \textbf{Echenmenge}, und \(E \subseteq 2^V\) eine Menge zweielementiger Mengen, die \textbf{Kantenmenge}, ist.
 
 \mysubsection{Definition (k-Färbung)}
@@ -249,10 +249,10 @@
         \text{k-COLORING} := \{G : \text{es gibt eine k-Färbung für den Graphen G}\}  
     \]
 
-\mysubsection{Bemerkung(NP-Eigenschaft von COLORING und k-COLORING)*}
+\mysubsection{Bemerkung(NP-Eigenschaft COLORING und k-COLORING)\(\diamondsuit\)}
     Es gibt COLORING \(\in\) \textbf{NP} und für \(k \in \mathbb{N}\) gilt k-COLORING \(\in\) \textbf{NP}.
 
-\mysubsection{Satz(NP-Vollständigkeit von 3-Coloring)*}
+\mysubsection{Satz(NP-Vollständig 3-Coloring)\(\diamondsuit\)}
     Das Problem 3-Coloring ist \textbf{NP}-vollständig.
     \begin{proof}
         Nach \hyperref[subsec:8.20]{Bemerkung 8.20} und \hyperref[subsec:8.16]{Satz 8.16} genügt es 3-SAT \(\leq^P_m\) 3-COLORING zu zeigen. Wir müssen also eine aussagenlogische Formel \(\varphi\) in einen Graphen G transformieren \(\cdots\)
@@ -260,13 +260,13 @@
         \(\varphi\) in 3-KNF
     \end{proof}
 
-\mysubsection{Korrolar (k-COLORING NP-vollständig für k \(\leq\) 3)*}
+\mysubsection{Korrolar (k-COLORING NP-vollständig )\(\diamondsuit\)}
     Für \(k \leq 3\) ist k-COLORING \textbf{NP}-vollständig.
     \begin{proof}
         Übung
     \end{proof}
 
-\mysubsection{Korrolar(COLORING NP-vollständig)*}
+\mysubsection{Korrolar(COLORING NP-vollständig)\(\diamondsuit\)}
     COLORING ist \textbf{NP}-vollständig.
 
 \mysubsection{Definition (EXACTCOVER)}
@@ -274,10 +274,10 @@
     \[
         \text{EXACTCVER} := \{S : \text{S ist eine endliche Menge endlicher Mengen mit einer exakten Überdeckung}\}  
     \]
-\mysubsection{Bemerkung (EXACTCOVER NP Eigenschaft)*}
+\mysubsection{Bemerkung (EXACTCOVER NP Eigenschaft)\(\diamondsuit\)}
     EXACTCOVER \(\in\) \textbf{NP}
 
-\mysubsection{Satz (EXACTCOVER NP-vollständig)*}
+\mysubsection{Satz (EXACTCOVER NP-vollständig)\(\diamondsuit\)}
     EXACTCOVER ist \textbf{NP}-vollständig.
     \[\text{ohne beweis.}\]
 
@@ -290,6 +290,6 @@
 \mysubsection{Bemerkung(SUBSETSUM NP Eigenschaft)*}
     SUBSETSUM \(\in\) \textbf{NP}
 
-\mysubsection{Satz(SUBSETSUM NP-vollständig)*}
+\mysubsection{Satz(SUBSETSUM NP-vollständig)\(\diamondsuit\)}
     SUBSETSUM ist \textbf{NP}-vollständig.
     \[\text{ohne beweis.}\]
