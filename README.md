@@ -26,22 +26,3 @@ Dieses Skript ist unter der XYZ-Lizenz veröffentlicht. Bitte beachte die Lizenz
 
 Falls du einen Fehler in der Mitschrift findest, sei es Rechtschreibfehler, Abschreibefehler oder syntaktische Fehler, freue ich mich über deine Mithilfe. Du kannst mich entweder per E-Mail (lukas.dzielski@stud-uni.heidelberg.de) kontaktieren oder eine Pull Request erstellen, um auf den Fehler aufmerksam zu machen.
 
-## Weiterführende Ressourcen
-
-Hier sind einige weitere Ressourcen, die dir beim Lernen und Verstehen des Kurses XYZ helfen könnten:
-
-- Sipser, M. (2012). Introduction to the Theory of Computation. Cengage Learning. [https://fuuu.be/polytech/INFOF408/Introduction-To-The-Theory-Of-Computation-Michael-Sipser.pdf]
-- Arora, S., & Barak, B. (2009). Computational complexity: a modern approach. Cambridge University Press.
-- Schulz, A. (2022). Grundlagen der Theoretischen Informatik. Springer Vieweg.
-- Vossen, G., & Witt, K. U. (2016). Grundkurs Theoretische Informatik: Eine anwendungsbezogene Einführung-Für Studierende in allen Informatik-Studiengängen. Springer Vieweg.
-
-- https://moodle.uni-heidelberg.de/course/view.php?id=16134
-- 
-## Karteikartensammlung
-
-Zusätzlich zum Skript gibt es auch eine Karteikartensammlung, die alle Definitionen des Skripts abdeckt. Die Karteikarten dienen als nützliches Hilfsmittel zur Wiederholung und Vertiefung des gelernten Stoffs. Die Karteikartensammlung ist im Anki-Format mit der Dateiendung .apkg erstellt.
-
-Um die Karteikarten verwenden zu können, benötigst du die Anki-App, die auf deinem Gerät installiert sein muss. Du kannst die Anki-App von der offiziellen GitHub-Seite der Entwickler herunterladen: [https://github.com/ankitects/anki].
-
-Um auf die Karteikarten zuzugreifen, kannst du entweder den Ordner "Karteikarten" herunterladen, der das gesamte Anki-Deck enthält, oder du kannst die Karteikartensammlung als separate .apkg-Datei aus den Releases herunterladen.
-
